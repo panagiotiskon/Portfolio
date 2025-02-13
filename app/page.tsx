@@ -1,4 +1,5 @@
-import Hero from "../components/Hero";
+import  NavBar  from "../components/NavBar";
+import Hero  from "../components/Hero";
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
      px-5"
     >
       <div className="max-w-7xl w-full">
-        <Hero/>
+        <NavBar />
+        <Hero />
       </div>
     </main>
   );
