@@ -9,3 +9,24 @@
       -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
     }
   }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000319;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #402745;
+    border-radius: 10px;
+    border: 2px solid #000319;
+  }
+
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #593a5f;
+  }
+

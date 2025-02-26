@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { TextGenerateEffect } from './ui/textGenerateEffect'
 
 function AboutMe() {
@@ -7,16 +8,16 @@ function AboutMe() {
       className="flex flex-row gap-4 p-6 items-center pt-60"
       id="about"
     >
-      <div className="justify-center">
-        <img
+        <Image
           src="/profile.png"
           alt="profile"
-          className="rounded-full h-64 w-64 shadow-lg"
+          className="rounded-full shadow-lg"
+          width={256}
+          height={256}
         />
-      </div>
       <div>
         <TextGenerateEffect
-          words="Welcome to my portofolio"
+          words=""
           className="text-3xl"
         />
       </div>

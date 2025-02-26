@@ -11,8 +11,9 @@ export default {
       colors: {
         black:{
           DEFAULT: "#000",
-          100: "#000319"
-        }
+          100: "#000319",
+
+        },
       }
     },
   },
