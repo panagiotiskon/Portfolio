@@ -3,18 +3,20 @@ import { SparklesCore } from "./ui/sparkles";
 import { TextGenerateEffect } from "./ui/textGenerateEffect";
 import MagicButton from "./ui/magicButton";
 import { FiDownload } from "react-icons/fi";
-import AboutMe from "./AboutMe";
 import { texts } from "../app/data";
 
 const Hero = () => {
   return (
     <div className="">
-      <div className=" relative w-full flex flex-col overflow-hidden rounded-md">
-        <div className="md:text-6xl text-3xl lg:text-6xl font-bold text-center text-white pt-20 mt-20">
-          <p>Hello, I&apos;m Panagiotis</p>
+      <div className=" relative w-full flex flex-col overflow-hidden rounded-md h-screen">
+        <div className="md:text-5xl text-3xl lg:text-5xl font-bold text-center text-white pt-20 mt-20 ">
+            <p className="text-3xl">{texts.WELCOME}</p>
+            <p className="mt-4">
+            {texts.GREETING} <span className="font-jetbrains text-lightBlue">Panagiotis</span>
+            </p>
           <TextGenerateEffect
             words={texts.INTRO}
-            className="text-3xl"
+            className="text-lg font-jetbrains"
           />
         </div>
         <div className="w-full absolute inset-0 h-[550px] items-center justify-center mb-4 fade-mask">
@@ -38,7 +40,6 @@ const Hero = () => {
             position="right"
           />
         </a>
-        <AboutMe />
       </div>
     </div>
   );

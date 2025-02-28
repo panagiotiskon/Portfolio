@@ -12,9 +12,12 @@ export default {
         black:{
           DEFAULT: "#000",
           100: "#000319",
-
         },
+        lightBlue: "#00c6c0",
       }
+    },
+    fontFamily: {
+      'jetbrains': ['JetBrains Mono', 'monospace'],
     },
   },
   plugins: [],

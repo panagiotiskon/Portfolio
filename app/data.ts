@@ -5,6 +5,9 @@ export const FILE_TITLES = {
   };
 
 export const texts ={
-    INTRO: "Hello, nice to meet you",
+    NAME: "Panagiotis",
+    GREETING: "Hi, I'm",
+    WELCOME: "Welcome to my Portfolio",
+    INTRO: "Junior Full-Stack Developer ",
     CV_BUTTON: "Get a copy",
 }

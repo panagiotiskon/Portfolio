@@ -22,8 +22,8 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Welcome to my Portofolio",
-  description: "Welcome to my Portofolio",
+  title: "Welcome to my Portfolio",
+  description: "Welcome to my Portfolio",
 };
 
 export default function RootLayout({

@@ -5,9 +5,10 @@ import { TextGenerateEffect } from './ui/textGenerateEffect'
 function AboutMe() {
   return (
     <div
-      className="flex flex-row gap-4 p-6 items-center pt-60"
+      className="py-96 flex items-center justify-center h-screen"
       id="about"
     >
+      <div className="flex flex-row gap-4 p-6 items-center">
         <Image
           src="/profile.png"
           alt="profile"
@@ -15,11 +16,12 @@ function AboutMe() {
           width={256}
           height={256}
         />
-      <div>
-        <TextGenerateEffect
-          words=""
-          className="text-3xl"
-        />
+        <div>
+          <TextGenerateEffect
+            words="eeeeeeeeeeeeeee"
+            className="text-3xl"
+          />
+        </div>
       </div>
     </div>
   );
