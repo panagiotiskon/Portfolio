@@ -19,7 +19,7 @@ const Hero = () => {
             className="text-lg font-jetbrains"
           />
         </div>
-        <div className="w-full absolute inset-0 h-[550px] items-center justify-center mb-4 fade-mask">
+        <div className="w-full absolute inset-0 h-screen items-center justify-center mb-4 fade-mask">
           <SparklesCore
             id="tsparticlesfullpage"
             background="transparent"
