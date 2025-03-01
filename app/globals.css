@@ -8,6 +8,14 @@
       mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
       -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
     }
+    
+    .reverse-scroll{
+        direction: rtl;
+    }
+
+    .reverse-scroll > * {
+      direction: ltr;
+    }
   }
 
   ::-webkit-scrollbar {

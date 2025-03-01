@@ -1,4 +1,6 @@
-import type { Metadata } from "next";
+
+"use client";
+
 import {
   Geist,
   Geist_Mono,
@@ -21,10 +23,6 @@ const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Panagiotis's Portfolio",
-  description: "My Portfolio",
-};
 
 export default function RootLayout({
   children,
