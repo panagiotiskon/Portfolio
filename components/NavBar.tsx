@@ -4,8 +4,8 @@ import {FloatingNav} from './ui/floatingNav'
 
 const NavBarItems = [
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
-  { name: "Resume", link: "#resume" },
   { name: "Contact", link: "#contact" },
 ];
 

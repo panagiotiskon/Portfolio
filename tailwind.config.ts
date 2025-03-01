@@ -9,16 +9,34 @@ export default {
   theme: {
     extend: {
       colors: {
-        black:{
+        black: {
           DEFAULT: "#000",
           100: "#000319",
         },
         lightBlue: "#00c6c0",
-      }
-    },
-    fontFamily: {
-      'jetbrains': ['JetBrains Mono', 'monospace'],
+      },
+      fontFamily: {
+        jetbrains: [
+          "JetBrains Mono",
+          "monospace",
+        ],
+      },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 } satisfies Config;
+
+// @ts-ignore
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+
+
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
