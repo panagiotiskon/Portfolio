@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { TextGenerateEffect } from "./ui/textGenerateEffect";
@@ -17,6 +19,7 @@ const Hero = () => {
           <TextGenerateEffect
             words={texts.INTRO}
             className="text-lg font-jetbrains"
+            duration={3}
           />
         </div>
         <div className="w-full absolute inset-0 h-screen items-center justify-center mb-4 fade-mask">

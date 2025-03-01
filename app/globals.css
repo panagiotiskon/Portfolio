@@ -30,3 +30,9 @@
     background: #593a5f;
   }
 
+
+  @layer base {
+    * {
+      @apply !scroll-smooth;
+    }
+  }

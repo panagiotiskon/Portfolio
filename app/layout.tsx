@@ -22,8 +22,8 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Welcome to my Portfolio",
-  description: "Welcome to my Portfolio",
+  title: "Panagiotis's Portfolio",
+  description: "My Portfolio",
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetBrainsMono} antialiased`}
       >
