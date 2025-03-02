@@ -14,6 +14,8 @@ export default {
           100: "#000319",
         },
         lightBlue: "#00c6c0",
+        beige: "#fff7d6",
+        grey: "#95b1ae",
       },
       fontFamily: {
         jetbrains: [

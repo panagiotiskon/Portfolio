@@ -4,11 +4,21 @@ import React from 'react'
 import { TextGenerateEffect } from './ui/textGenerateEffect'
 import { GlareCard } from './ui/glareCard';
 import {texts} from '../app/data'
+import  SectionHeader  from './SectionHeader'
 
 function AboutMe() {
   return (
-    <section className="flex items-center justify-center min-h-screen" id="about">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center 
+    <section
+      className="flex flex-col items-center justify-center min-h-screen space-y-6"
+      id="about"
+    >
+      <SectionHeader
+        title="About Me."
+        align="left"
+        className="max-w-4xl"
+      />
+      <div
+        className="max-w-4xl mx-auto flex flex-col md:flex-row items-center 
                     gap-12 p-1 md:text-3xl text-sm lg:text-3xl font-bold"
       >
         <GlareCard className="flex flex-col items-center justify-center w-72">

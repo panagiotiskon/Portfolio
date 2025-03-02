@@ -1,6 +1,7 @@
 "use client"; 
 
 import { StickyScroll } from "./ui/stickyScroll";
+import SectionHeader from "./SectionHeader";
 
 const content = [
     {
@@ -27,10 +28,18 @@ const content = [
 
 
 const Experience = () => {
-    return(
-    <div className="py-24 flex-col flex jystify-center items-center h-screen" id="experience">
-        <StickyScroll content={content}/>
-    </div>
+    return (
+      <div
+        className="py-24 flex-col flex jystify-center items-center h-screen space-y-14"
+        id="experience"
+      >
+        <SectionHeader
+          title=".Experience"
+          align="right"
+          className="max-w-4xl"
+        />
+        <StickyScroll content={content} />
+      </div>
     );
 };
 
