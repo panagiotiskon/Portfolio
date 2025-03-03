@@ -9,7 +9,7 @@ import  SectionHeader  from './SectionHeader'
 function AboutMe() {
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen space-y-6"
+      className="flex flex-col items-center justify-center min-h-screen space-y-6 max-w-3xl:"
       id="about"
     >
       <SectionHeader

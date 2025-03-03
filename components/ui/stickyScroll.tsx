@@ -10,6 +10,7 @@ export const StickyScroll = ({
 }: {
   content: {
     title: string;
+    subtitle?: string;
     description: string;
     content?: React.ReactNode | any;
   }[];
@@ -41,7 +42,8 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "var(--slate-900)",
+    "var(--darkRed)",
+    "var(--lightPurple)",
     "var(--black)",
     "var(--neutral-900)",
   ];
@@ -64,7 +66,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 reverse-scroll"
+      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 reverse-scroll gap-5"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -82,6 +84,19 @@ export const StickyScroll = ({
               >
                 {item.title}
               </motion.h2>
+              {item.subtitle && (
+                <motion.h5
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                  }}
+                  className="text-lg text-gray-400"
+                >
+                  {item.subtitle}
+                </motion.h5>
+              )}
               <motion.p
                 initial={{
                   opacity: 0,
@@ -89,7 +104,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-kg text-slate-300 mt-10 whitespace-pre-line"
               >
                 {item.description}
               </motion.p>

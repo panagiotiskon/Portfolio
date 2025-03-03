@@ -16,6 +16,8 @@ export default {
         lightBlue: "#00c6c0",
         beige: "#fff7d6",
         grey: "#95b1ae",
+        lightPurple: "#25153f",
+        darkRed: "#1d0000",
       },
       fontFamily: {
         jetbrains: [
