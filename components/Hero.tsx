@@ -7,6 +7,7 @@ import MagicButton from "./ui/magicButton";
 import { FiDownload } from "react-icons/fi";
 import { texts } from "../app/data";
 
+
 const Hero = () => {
   return (
     <div className="">

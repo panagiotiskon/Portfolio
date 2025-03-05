@@ -5,9 +5,15 @@ import SectionHeader from "./SectionHeader";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title:
+      "Software Engineer, Frontend & Node.js @ Kotsovolos S.A. ",
+    subtitle: "December 2024 - Present",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "- Develop and optimize the front layer of the Kotsovolos website and KRetail B2B site using React.js.\n" +
+      "- Work on the Node.js microservices layer, adding new features and improving performance.\n" +
+      "- Collaborate closely within an Agile team, ensuring effective teamwork and knowledge sharing.\n" +  
+      "- Optimize application performance and ensure seamless integration between frontend and backend systems.\n" +
+      "- Gain experience in developing scalable and maintainable microservices architectures.",
     content: (
       <div className="h-full w-full bg-gradient-to-br from-red-800 to-red-950 flex items-center justify-center text-white">
         <img
@@ -19,8 +25,9 @@ const content = [
     ),
   },
   {
-    title: "Software Engineer Intern, Backend @ Logicea",
-    subtitle: "February - August 2024" , 
+    title:
+      "Software Engineer Intern, Backend @ Logicea",
+    subtitle: "February - August 2024",
     description:
       "- Developed RESTful APIs using the Spring Boot Framework and MySQL relational databases.\n" +
       "- Actively contributed as a member of a large Agile team, demonstrating strong collaboration and communication skills.\n" +
@@ -36,7 +43,7 @@ const content = [
         />
       </div>
     ),
-  }
+  },
 ];
 
 
