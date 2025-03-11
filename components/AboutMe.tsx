@@ -28,10 +28,13 @@ function AboutMe() {
             className="h-full w-full absolute inset-0 object-cover"
           />
         </GlareCard>
-        <div className="text-center md:text-left space-y-4">
-          <p className="text-lg text-gray-300">
-            {texts.ABOUT_ME_NEW}
-          </p>
+        <div className="text-center md:text-left space-y-4 text-lg text-gray-300">
+          <p>{texts.ABOUT_ME_NEW_1}</p>
+          <p>{texts.ABOUT_ME_NEW_2}</p>
+          <p>{texts.ABOUT_ME_NEW_3}</p>
+          <p>{texts.ABOUT_ME_NEW_4}</p>
+          <p>{texts.ABOUT_ME_NEW_5}</p>
+          <p>{texts.ABOUT_ME_NEW_6}</p>
           {/* <TextGenerateEffect
             words={texts.ABOUT_ME_NEW}
             className="text-gray-300"

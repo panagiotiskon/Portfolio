@@ -50,7 +50,7 @@ const content = [
 const Experience = () => {
     return (
       <div
-        className="py-24 flex-col flex justify-center items-center h-screen space-y-14 max-w-[1000px] mx-auto"
+        className="py-24 flex-col flex justify-center items-center h-screen space-y-9 max-w-[1000px] mx-auto"
         id="experience"
       >
         <SectionHeader
