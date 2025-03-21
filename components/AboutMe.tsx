@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from 'react'
-import { TextGenerateEffect } from './ui/textGenerateEffect'
+import React from 'react';
+import { TextGenerateEffect } from './ui/textGenerateEffect';
 import { GlareCard } from './ui/glareCard';
-import {texts} from '../app/data'
-import  SectionHeader  from './SectionHeader'
+import { texts } from '../app/data';
+import SectionHeader from './SectionHeader';
 
 function AboutMe() {
   return (
@@ -12,11 +12,7 @@ function AboutMe() {
       className="flex flex-col items-center justify-center min-h-screen space-y-6 max-w-3xl:"
       id="about"
     >
-      <SectionHeader
-        title="About Me."
-        align="left"
-        className="max-w-4xl"
-      />
+      <SectionHeader title="About Me." align="left" className="max-w-4xl" />
       <div
         className="max-w-4xl mx-auto flex flex-col md:flex-row items-center 
                     gap-12 p-1 md:text-3xl text-sm lg:text-3xl font-bold"
@@ -46,4 +42,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe
+export default AboutMe;

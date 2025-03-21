@@ -1,20 +1,19 @@
-import React from 'react'
-import {FloatingNav} from './ui/floatingNav'
-
+import React from 'react';
+import { FloatingNav } from './ui/floatingNav';
 
 const NavBarItems = [
-  { name: "About", link: "#about" },
-  { name: "Experience", link: "#experience" },
-  { name: "Projects", link: "#projects" },
-  { name: "Contact", link: "#contact" },
+  { name: 'About', link: '#about' },
+  { name: 'Experience', link: '#experience' },
+  { name: 'Projects', link: '#projects' },
+  { name: 'Contact', link: '#contact' },
 ];
 
 function NavBar() {
-    return (
+  return (
     <div>
-      <FloatingNav navItems={NavBarItems}/>
+      <FloatingNav navItems={NavBarItems} />
     </div>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
