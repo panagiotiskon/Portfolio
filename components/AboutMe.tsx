@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { TextGenerateEffect } from './ui/textGenerateEffect';
+// import { TextGenerateEffect } from './ui/textGenerateEffect';
 import { GlareCard } from './ui/glareCard';
 import { texts } from '../app/data';
 import SectionHeader from './SectionHeader';

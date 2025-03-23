@@ -22,6 +22,11 @@ export default {
       fontFamily: {
         jetbrains: ['JetBrains Mono', 'monospace'],
       },
+      animation: {
+        spin_slow: 'spin 4s linear infinite',
+        spin_medium: 'spin 3s linear infinite',
+        spin_fast: 'spin 2s linear infinite',
+      },
     },
   },
   plugins: [addVariablesForColors],

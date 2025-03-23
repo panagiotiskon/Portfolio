@@ -50,6 +50,7 @@ const Hero = () => {
                 />
               }
               position="right"
+              animation="3"
             />
           </a>
           <a
@@ -67,12 +68,14 @@ const Hero = () => {
                 />
               }
               position="right"
+              animation="1"
             />
           </a>
           <a href="#about" className="items-center justify-center">
             <MagicButton
               icon={<FiDownload className="w-7 h-7" />}
               position="right"
+              animation="2"
             />
           </a>
         </div>
