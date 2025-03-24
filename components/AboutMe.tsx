@@ -3,13 +3,14 @@
 import React from 'react';
 // import { TextGenerateEffect } from './ui/textGenerateEffect';
 import { GlareCard } from './ui/glareCard';
-import { texts } from '../app/data';
+import { texts } from '@/app/data';
 import SectionHeader from './SectionHeader';
+import { Spotlight } from './ui/spotlight';
 
 function AboutMe() {
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen space-y-6 max-w-3xl:"
+      className="relative flex flex-col items-center justify-center min-h-screen space-y-6 max-w-3xl:"
       id="about"
     >
       <SectionHeader title="About Me." align="left" className="max-w-4xl" />
@@ -17,6 +18,7 @@ function AboutMe() {
         className="max-w-4xl mx-auto flex flex-col md:flex-row items-center 
                     gap-12 p-1 md:text-3xl text-sm lg:text-3xl font-bold"
       >
+          <Spotlight />
         <GlareCard className="flex flex-col items-center justify-center w-72">
           <img
             src="/profile2.jpg"

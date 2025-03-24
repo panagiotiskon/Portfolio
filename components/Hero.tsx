@@ -1,11 +1,10 @@
 'use client';
 
-import React from 'react';
 import { SparklesCore } from './ui/sparkles';
 import { TextGenerateEffect } from './ui/textGenerateEffect';
 import MagicButton from './ui/magicButton';
 import { FiDownload } from 'react-icons/fi';
-import { texts } from '../app/data';
+import { texts } from '@/app/data';
 
 const Hero = () => {
   return (
@@ -44,7 +43,7 @@ const Hero = () => {
             <MagicButton
               icon={
                 <img
-                  src="/github_logo.svg"
+                  src="/github_logo.png"
                   alt="Github Logo"
                   className="w-10"
                 />
@@ -62,7 +61,7 @@ const Hero = () => {
             <MagicButton
               icon={
                 <img
-                  src="/linkedin_logo.svg"
+                  src="/linkedin_logo.png"
                   alt="LinkedIn Logo"
                   className="w-10"
                 />
