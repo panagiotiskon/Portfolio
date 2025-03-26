@@ -12,7 +12,7 @@ const MagicButton = ({
   icon?: React.ReactNode;
   position?: string;
   handleClick?: () => void;
-  animation?: string;
+  animation?: '1' | '2' | '3';
   otherClasses?: string;
 }) => {
 
@@ -22,7 +22,7 @@ const MagicButton = ({
     '3': 'animate-spin_fast',
   };
 
-  const spinnerAnimation = animationClasses[animation] || 'animate-spin_medium';
+  const spinnerAnimation = animation ? animationClasses[animation] : 'animate-spin_medium';
   return (
     <button
       className={`relative inline-flex h-12 w-14 mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none ${otherClasses}`}

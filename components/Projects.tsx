@@ -2,7 +2,10 @@ import SectionHeader from './SectionHeader';
 import { BentoGrid, BentoGridItem } from './ui/bentoGrid';
 import Image from 'next/image';
 
-const Skeleton = ({ imageSrc, otherClassNames = '' }) => (
+const Skeleton: React.FC<{ imageSrc: string; otherClassNames?: string }> = ({
+  imageSrc,
+  otherClassNames = '',
+}) => (
   <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden bg-transparent">
     <Image
       src={imageSrc}
@@ -34,10 +37,7 @@ const items = [
     description:
       'A low-level implementation in C of extendible hashing for database systems.This method uses directories and buckets to hash data and to maximize flexibility and efficiency in computing time.',
     header: (
-      <Skeleton
-        imageSrc={'/test2.svg'}
-        otherClassNames=" h-max scale-[2.2]"
-      />
+      <Skeleton imageSrc={'/test2.svg'} otherClassNames=" h-max scale-[2.2]" />
     ),
     className: 'md:col-span-1',
     skills: [
@@ -53,10 +53,7 @@ const items = [
     description:
       'This project implements and optimizes Incremental and Convex Hull algorithms using Local Search, Simulated Annealing, and preprocessing, then applies them to test sets and outputs results for analysis.',
     header: (
-      <Skeleton
-        imageSrc={'/test3.svg'}
-        otherClassNames=" h-max scale-[1.3] "
-      />
+      <Skeleton imageSrc={'/test3.svg'} otherClassNames=" h-max scale-[1.3] " />
     ),
     className: 'md:col-span-1',
     skills: [

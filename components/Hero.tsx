@@ -5,6 +5,7 @@ import { TextGenerateEffect } from './ui/textGenerateEffect';
 import MagicButton from './ui/magicButton';
 import { FiDownload } from 'react-icons/fi';
 import { texts } from '@/app/data';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -42,10 +43,11 @@ const Hero = () => {
           >
             <MagicButton
               icon={
-                <img
+                <Image
                   src="/github_logo.png"
                   alt="Github Logo"
-                  className="w-10"
+                  width={40}
+                  height={40}
                 />
               }
               position="right"
@@ -60,10 +62,11 @@ const Hero = () => {
           >
             <MagicButton
               icon={
-                <img
+                <Image
                   src="/linkedin_logo.png"
                   alt="LinkedIn Logo"
-                  className="w-10"
+                  width={40}
+                  height={40}
                 />
               }
               position="right"

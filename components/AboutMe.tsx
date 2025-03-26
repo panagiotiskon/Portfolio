@@ -6,6 +6,7 @@ import { GlareCard } from './ui/glareCard';
 import { texts } from '@/app/data';
 import SectionHeader from './SectionHeader';
 import { Spotlight } from './ui/spotlight';
+import Image from 'next/image';
 
 function AboutMe() {
   return (
@@ -18,12 +19,19 @@ function AboutMe() {
         className="max-w-4xl mx-auto flex flex-col md:flex-row items-center 
                     gap-12 p-1 md:text-3xl text-sm lg:text-3xl font-bold"
       >
-          <Spotlight />
+        <Spotlight />
         <GlareCard className="flex flex-col items-center justify-center w-72">
-          <img
+          {/* <img
             src="/profile2.jpg"
             alt="Profile Picture"
             className="h-full w-full absolute inset-0 object-cover"
+          /> */}
+          <Image
+            src="/profile2.jpg"
+            alt="Profile Picture"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0"
           />
         </GlareCard>
         <div className="md:text-left space-y-4 text-lg text-gray-300 text-justify">
