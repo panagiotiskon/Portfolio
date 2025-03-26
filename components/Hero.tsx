@@ -74,7 +74,7 @@ const Hero = () => {
             />
           </a>
           <a
-            href="/Panagiotis_Kontoeidis.pdf"
+            href="./Panagiotis_Kontoeidis.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="items-center justify-center"
