@@ -44,7 +44,7 @@ const Hero = () => {
             <MagicButton
               icon={
                 <Image
-                  src="/github_logo.png"
+                  src="./github_logo.png"
                   alt="Github Logo"
                   width={40}
                   height={40}
@@ -63,7 +63,7 @@ const Hero = () => {
             <MagicButton
               icon={
                 <Image
-                  src="/linkedin_logo.png"
+                  src="./linkedin_logo.png"
                   alt="LinkedIn Logo"
                   width={40}
                   height={40}

@@ -16,7 +16,7 @@ const content = [
       '- Gain experience in developing scalable and maintainable microservices architectures.',
     content: (
       <div className="h-full w-full bg-gradient-to-br from-red-800 to-red-950 flex items-center justify-center text-white">
-        <Image src="/kots.svg" alt="Logo" width={176} height={176} className="scale-150" />
+        <Image src="./kots.svg" alt="Logo" width={176} height={176} className="scale-150" />
       </div>
     ),
   },
@@ -31,7 +31,7 @@ const content = [
       '- Gained extensive experience in Java and the Spring Framework.',
     content: (
       <div className="h-full w-full bg-gradient-to-br from-purple-500 to-purple-950 flex items-center justify-center text-white">
-        <Image src="/logicea.svg" alt="Logicea Logo" width={128} height={128} className="h-32 w-32" />
+        <Image src="./logicea.svg" alt="Logicea Logo" width={128} height={128} className="h-32 w-32" />
       </div>
     ),
   },

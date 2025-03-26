@@ -27,7 +27,7 @@ function AboutMe() {
             className="h-full w-full absolute inset-0 object-cover"
           /> */}
           <Image
-            src="/profile2.jpg"
+            src="./profile2.jpg"
             alt="Profile Picture"
             layout="fill"
             objectFit="cover"
