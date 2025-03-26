@@ -26,7 +26,7 @@ function AboutMe() {
             className="h-full w-full absolute inset-0 object-cover"
           />
         </GlareCard>
-        <div className="text-center md:text-left space-y-4 text-lg text-gray-300">
+        <div className="md:text-left space-y-4 text-lg text-gray-300 text-justify">
           <p>{texts.ABOUT_ME_NEW_1}</p>
           <p>{texts.ABOUT_ME_NEW_2}</p>
           <p>{texts.ABOUT_ME_NEW_3}</p>

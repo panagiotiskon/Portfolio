@@ -70,7 +70,12 @@ const Hero = () => {
               animation="1"
             />
           </a>
-          <a href="#about" className="items-center justify-center">
+          <a
+            href="/Panagiotis_Kontoeidis.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items-center justify-center"
+          >
             <MagicButton
               icon={<FiDownload className="w-7 h-7" />}
               position="right"
