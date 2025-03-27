@@ -1,11 +1,10 @@
 'use client';
 
 import React from 'react';
-// import { TextGenerateEffect } from './ui/textGenerateEffect';
-import { GlareCard } from './ui/glareCard';
+import { GlareCard } from './ui/GlareCard';
 import { texts } from '@/app/data';
 import SectionHeader from './SectionHeader';
-import { Spotlight } from './ui/spotlight';
+import { Spotlight } from './ui/Spotlight';
 import Image from 'next/image';
 
 function AboutMe() {
@@ -21,11 +20,6 @@ function AboutMe() {
       >
         <Spotlight />
         <GlareCard className="flex flex-col items-center justify-center w-72">
-          {/* <img
-            src="/profile2.jpg"
-            alt="Profile Picture"
-            className="h-full w-full absolute inset-0 object-cover"
-          /> */}
           <Image
             src="./profile2.jpg"
             alt="Profile Picture"
@@ -34,18 +28,13 @@ function AboutMe() {
             className="absolute inset-0"
           />
         </GlareCard>
-        <div className="md:text-left space-y-4 text-lg text-gray-300 text-justify">
+        <div className="md:text-left space-y-4 text-lg text-neutral-300 text-justify">
           <p>{texts.ABOUT_ME_NEW_1}</p>
           <p>{texts.ABOUT_ME_NEW_2}</p>
           <p>{texts.ABOUT_ME_NEW_3}</p>
           <p>{texts.ABOUT_ME_NEW_4}</p>
           <p>{texts.ABOUT_ME_NEW_5}</p>
           <p>{texts.ABOUT_ME_NEW_6}</p>
-          {/* <TextGenerateEffect
-            words={texts.ABOUT_ME_NEW}
-            className="text-gray-300"
-            duration={0.1}
-          /> */}
         </div>
       </div>
     </section>

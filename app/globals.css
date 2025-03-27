@@ -23,6 +23,10 @@
   .reverse-scroll > * {
     direction: ltr;
   }
+
+  .text {
+    color: #d4d4d4;
+  }
 }
 
 ::-webkit-scrollbar {

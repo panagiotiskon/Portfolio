@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import MagicButton from '@/components/ui/magicButton';
-import { LampContainer } from '@/components/ui/lampContainer';
+import MagicButton from '@/components/ui/MagicButton';
+import { LampContainer } from '@/components/ui/LampContainer';
 import { motion } from 'framer-motion';
 
 const NotFound = () => {
@@ -30,7 +30,7 @@ const NotFound = () => {
               title="Go Home"
               position="left"
               animation="2"
-              otherClasses="w-36"
+              width={144}
             />
           </Link>
         </motion.h1>

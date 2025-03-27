@@ -14,14 +14,22 @@ const Footer = () => {
         </a>{' '}
         and{' '}
         <a
-          href="https://ui.aceternity.com/"
+          href="https://tailwindcss.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-white hover:text-gray-300"
         >
-          Aceternity
+          Tailwind
         </a>
-        .
+        . See source code{' '}
+        <a
+          href="https://github.com/panagiotiskon/portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-white hover:text-gray-300"
+        >
+          here.
+        </a>
       </p>
       <p className="mt-2">
         &copy; {new Date().getFullYear()} Panagiotis Kontoeidis. All rights

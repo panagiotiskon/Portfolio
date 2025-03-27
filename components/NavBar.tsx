@@ -1,5 +1,5 @@
 import React from 'react';
-import { FloatingNav } from './ui/floatingNav';
+import { FloatingNav } from './ui/FloatingNav';
 
 const NavBarItems = [
   { name: 'About', link: '#about' },

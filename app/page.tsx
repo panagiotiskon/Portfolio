@@ -4,6 +4,8 @@ import AboutMe from '@/components/AboutMe';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
+import ContactMe from '@/components/Contact';
 
 export default function Home() {
   return (
@@ -15,10 +17,12 @@ export default function Home() {
     >
       <div className="max-w-7xl w-full">
         <NavBar />
+        <ScrollToTop />
         <Hero />
         <AboutMe />
         <Experience />
         <Projects />
+        <ContactMe />
         <Footer />
       </div>
     </main>
