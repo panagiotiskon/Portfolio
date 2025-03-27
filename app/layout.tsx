@@ -25,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+    <head>
+      <title>Panagiotis&#39;s Portfolio</title>
+    </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetBrainsMono} antialiased`}
       >
