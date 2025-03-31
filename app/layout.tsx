@@ -25,9 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <head>
-      <title>Panagiotis&#39;s Portfolio</title>
-    </head>
+      <head>
+        <link rel="icon" href="./PK-icon.png" />
+        <title>Panagiotis&#39;s Portfolio</title>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetBrainsMono} antialiased`}
       >

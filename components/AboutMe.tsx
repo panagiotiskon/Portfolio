@@ -7,7 +7,7 @@ import SectionHeader from './SectionHeader';
 import { Spotlight } from './ui/Spotlight';
 import Image from 'next/image';
 
-function AboutMe() {
+const AboutMe = () => {
   return (
     <section
       className="relative flex flex-col items-center justify-center min-h-screen space-y-6 max-w-3xl:"
@@ -21,7 +21,7 @@ function AboutMe() {
         <Spotlight />
         <GlareCard className="flex flex-col items-center justify-center w-72">
           <Image
-            src="./profile2.jpg"
+            src="./profile.jpg"
             alt="Profile Picture"
             layout="fill"
             objectFit="cover"
@@ -39,6 +39,6 @@ function AboutMe() {
       </div>
     </section>
   );
-}
+};
 
 export default AboutMe;

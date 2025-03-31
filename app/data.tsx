@@ -1,12 +1,6 @@
 import { ReactNode } from 'react';
 import Image from 'next/image';
 
-export const FILE_TITLES = {
-  PROFILE: 'User Profile',
-  SETTINGS: 'Settings Page',
-  DASHBOARD: 'Dashboard',
-};
-
 export const texts = {
   NAME: 'Panagiotis',
   FULL_NAME: 'Panagiotis Kontoeidis',
@@ -17,15 +11,7 @@ export const texts = {
   CONTACT: 'Want to connect ? Grab my email.',
   CONTACT_BUTTON: "Let's get in touch",
   CV_BUTTON: 'Get a copy',
-  COPIED: 'Copied!',
-  ABOUT_ME: `
-        I'm Panagiotis Kontoeidis, a passionate Software Engineer with a strong foundation in full-stack web development and backend systems. 
-        I recently earned my B.Sc. in Computer Science from the University of Athens, and after completing my military service, 
-        I'm eager to dive into the world of professional software development. 
-        
-        With hands-on experience at Kotsovolos and Logicea, I’ve worked on scalable web applications using React.js, Node.js, Spring Boot, and MySQL. 
-        Beyond coding, I am a Greek National Team fencer, bringing resilience, teamwork, and a problem-solving mindset to every project I work on.
-    `,
+  COPIED: 'Copied',
   ABOUT_ME_NEW_1:
     'I’m Panagiotis, a Computer Science graduate from the University of Athens with a passion for web development and crafting impactful digital experiences.',
   ABOUT_ME_NEW_2:
@@ -66,7 +52,7 @@ export const experienceContent: ExperienceItem[] = [
           width={176}
           height={176}
           className="scale-150"
-          />
+        />
       </div>
     ),
   },
@@ -94,11 +80,10 @@ export const experienceContent: ExperienceItem[] = [
   },
 ];
 
-
 const Skeleton: React.FC<{ imageSrc: string; otherClassNames?: string }> = ({
-                                                                              imageSrc,
-                                                                              otherClassNames = '',
-                                                                            }) => (
+  imageSrc,
+  otherClassNames = '',
+}) => (
   <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden bg-transparent">
     <Image
       src={imageSrc}
@@ -147,7 +132,10 @@ export const projects = [
     description:
       'This project implements and optimizes Incremental and Convex Hull algorithms using Local Search, Simulated Annealing, and preprocessing, then applies them to test sets and outputs results for analysis.',
     header: (
-      <Skeleton imageSrc={'./test3.svg'} otherClassNames=" h-max scale-[1.3] " />
+      <Skeleton
+        imageSrc={'./test3.svg'}
+        otherClassNames=" h-max scale-[1.3] "
+      />
     ),
     className: 'md:col-span-1',
     skills: [

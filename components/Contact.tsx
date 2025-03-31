@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 import MagicButton from './ui/MagicButton';
 import { FiSend } from 'react-icons/fi';
 import { FaCheck } from 'react-icons/fa';
 import { texts } from '@/app/data';
+import Image from 'next/image';
 
 const ContactMe = () => {
   const email = texts.EMAIL;
@@ -19,9 +20,16 @@ const ContactMe = () => {
 
   return (
     <div id="contact" className="flex flex-col items-center justify-center">
-      <p className="text-neutral-300 text-sm">
-        {texts.CONTACT}
-      </p>
+      <div className="w-full absolute left-0 bottom-0 min-h-[23rem]">
+        <Image
+          src="./footer-grid.svg"
+          alt="footer grid"
+          layout="fill"
+          objectFit="cover"
+          className="w-full h-full opacity-50"
+        />
+      </div>
+      <p className="text-neutral-300 text-sm">{texts.CONTACT}</p>
       <div className="mb-24">
         <MagicButton
           title={copied ? texts.COPIED : texts.CONTACT_BUTTON}
