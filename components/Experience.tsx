@@ -11,13 +11,13 @@ const Experience = () => {
       className="py-24 flex-col flex justify-center items-center h-screen space-y-9 max-w-[1000px] mx-auto"
       id="experience"
     >
-      <div className="w-full min-h-screen absolute fade-mask">
+      <div className="w-full min-h-96 absolute fade-mask mt-96">
         <Image
           src="./footer-grid.svg"
           alt="footer grid"
           layout="fill"
           objectFit="cover"
-          className="w-full h-full pt-30 lg:opacity-50 opacity:65"
+          className="w-full h-full lg:opacity-50 opacity:50"
         />
       </div>
       <SectionHeader title=".Experience" align="right" className="max-w-4xl" />
