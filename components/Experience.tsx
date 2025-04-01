@@ -11,7 +11,7 @@ const Experience = () => {
       className="py-24 flex-col flex justify-center items-center h-screen space-y-9 max-w-[1000px] mx-auto"
       id="experience"
     >
-      <div className="w-full lg:min-h-screen min-h-96 absolute fade-mask lg:mt-0 mt-96">
+      <div className="w-full lg:min-h-screen min-h-96 absolute fade-mask xl:mt-0 lg:mt-0 mt-96">
         <Image
           src="./footer-grid.svg"
           alt="footer grid"

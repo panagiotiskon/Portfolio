@@ -5,8 +5,8 @@ export const texts = {
   NAME: 'Panagiotis',
   FULL_NAME: 'Panagiotis Kontoeidis',
   GREETING: "Hi, I'm",
-  WELCOME: 'Welcome to my Portfolio',
-  INTRO: 'Junior Full-Stack Developer',
+  WELCOME: 'Welcome to my digital playground',
+  INTRO: 'Full Stack Developer',
   EMAIL: 'panos.kontoeidis@gmail.com',
   CONTACT: 'Want to connect ? Grab my email.',
   CONTACT_BUTTON: "Let's get in touch",
@@ -15,14 +15,16 @@ export const texts = {
   ABOUT_ME_NEW_1:
     'I’m Panagiotis, a Computer Science graduate from the University of Athens with a passion for web development and crafting impactful digital experiences.',
   ABOUT_ME_NEW_2:
-    'My journey extends beyond code—I’ve competed in programming, astrophysics, and business contests, sharpening both my technical expertise and communication skills.',
+    'My journey started in high school, I competed in contests over programming, astrophysics, and business administration contests, including the 5th Experimental Physics Olympiad, gaining knowledge, experience, and communication skills through presenting to juries and the public.',
   ABOUT_ME_NEW_3:
-    'Outside the tech world, I’ve spent over 15 years as a Sabre Fencing athlete, eight at a professional level. As a four-time Panhellenic Champion, I’ve proudly represented Greece on the global stage, competing in European and World Championships and securing top-64 world rankings.',
+    'During my academic years, I developed a strong interest in web development and data management, actively participating in hackathons and seminars to refine my skills and explore emerging technologies.',
   ABOUT_ME_NEW_4:
-    'Most recently, I took part in the 2023 European Games and Senior World Championships.',
+    'Outside the tech world, I’ve spent over 15 years as a Sabre Fencing athlete, eight at a professional level. As a four-time Panhellenic Champion, I’ve proudly represented Greece on the global stage, competing in European and World Championships and securing top-64 world rankings.',
   ABOUT_ME_NEW_5:
-    'Beyond competing, I am also a certified International Fencing Referee, officiating high-level tournaments.',
+    'Most recently, I took part in the 2023 European Games and Senior World Championships.',
   ABOUT_ME_NEW_6:
+    'Beyond competing, I am also a certified International Fencing Referee, officiating high-level tournaments.',
+  ABOUT_ME_NEW_7:
     'Whether in tech or on the piste, I am eager to succeed through strategy, precision, and an unstoppable drive to improve.',
 };
 

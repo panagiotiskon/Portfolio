@@ -1,13 +1,13 @@
 const Footer = () => {
   return (
-    <footer className="w-full text-gray-400 text-center pb-6 flex flex-col items-center justify-center text-xs ">
+    <footer className="w-full text-gray-400 text-center pb-6 flex flex-col items-center justify-center text-xs">
       <p className="max-w-xl px-4">
         Designed & Built with{' '}
         <a
           href="https://nextjs.org/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-white hover:text-gray-300"
+          className="font-semibold text-white hover:text-lightBlue transition-all duration-300 ease-in-out"
         >
           {' '}
           Next.js
@@ -17,7 +17,7 @@ const Footer = () => {
           href="https://tailwindcss.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-white hover:text-gray-300"
+          className="font-semibold text-white hover:text-lightBlue transition-all duration-300 ease-in-out"
         >
           Tailwind
         </a>
@@ -26,7 +26,7 @@ const Footer = () => {
           href="https://github.com/panagiotiskon/portfolio"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-white hover:text-gray-300"
+          className="font-semibold text-white hover:text-lightBlue transition-all duration-300 ease-in-out"
         >
           here.
         </a>

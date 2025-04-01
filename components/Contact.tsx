@@ -20,7 +20,7 @@ const ContactMe = () => {
 
   return (
     <div id="contact" className="flex flex-col items-center justify-center">
-      <div className="w-full absolute left-0 bottom-0 min-h-[23rem]">
+      <div className="w-full absolute left-0 bottom-0 min-h-[23rem] pointer-events-none ">
         <Image
           src="./footer-grid.svg"
           alt="footer grid"

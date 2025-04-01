@@ -64,7 +64,7 @@ export const BentoGridItem = ({
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-neutral-300"
+              className="hover:text-lightBlue transition-all duration-300 ease-in-out"
             >
               {title}
             </a>

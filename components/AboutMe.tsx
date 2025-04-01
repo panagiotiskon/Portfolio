@@ -28,13 +28,14 @@ const AboutMe = () => {
             className="absolute inset-0"
           />
         </GlareCard>
-        <div className="md:text-left space-y-4 text-lg text-neutral-300 text-justify">
+        <div className="md:text-left space-y-4 text-base text-neutral-300 text-justify">
           <p>{texts.ABOUT_ME_NEW_1}</p>
           <p>{texts.ABOUT_ME_NEW_2}</p>
           <p>{texts.ABOUT_ME_NEW_3}</p>
           <p>{texts.ABOUT_ME_NEW_4}</p>
           <p>{texts.ABOUT_ME_NEW_5}</p>
           <p>{texts.ABOUT_ME_NEW_6}</p>
+          <p>{texts.ABOUT_ME_NEW_7}</p>
         </div>
       </div>
     </section>

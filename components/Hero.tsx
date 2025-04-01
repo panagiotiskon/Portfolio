@@ -11,15 +11,14 @@ const Hero = () => {
   return (
     <div className="">
       <div className=" relative w-full flex flex-col overflow-hidden rounded-md h-screen">
-        <div className="md:text-5xl text-3xl lg:text-5xl font-bold text-center text-white pt-20 mt-20 ">
-          <p className="text-3xl">{texts.WELCOME}</p>
-          <p className="mt-4">
+        <div className="text-3xl  font-bold text-center text-white pt-28 mt-20 ">
+          <p className="mt-5 lg:text-6xl md:text-6xl">
             {texts.GREETING}{' '}
             <span className="font-jetbrains text-lightBlue">Panagiotis</span>
           </p>
           <TextGenerateEffect
             words={texts.INTRO}
-            className="text-lg font-jetbrains"
+            className=" font-jetbrains"
             duration={3}
           />
         </div>
