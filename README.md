@@ -6,7 +6,7 @@ An engaging and interactive platform showcasing my work, skills, and experience.
   This portfolio is designed to highlight my expertise in web development and provide visitors with a seamless browsing experience.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/984498a0-4728-4bed-a1fb-f82c07c3884b" alt="Screenshot from 2025-03-31 21-59-05">
+  <img src="https://github.com/user-attachments/assets/c4ce131f-1903-4fb1-b09f-de003b915837" alt="Screenshot from 2025-03-31 21-59-05">
 </p>
 
 ## Technologies Used
