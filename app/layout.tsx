@@ -1,7 +1,6 @@
-'use client';
-
 import { Geist, Geist_Mono, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+import type { Metadata } from 'next';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -17,6 +16,32 @@ const jetBrainsMono = JetBrains_Mono({
   variable: '--font-jetbrains-mono',
   subsets: ['latin'],
 });
+
+export const metadata: Metadata = {
+  title: "Panagiotis's Portfolio",
+  description: 'Discover my digital playground.',
+  openGraph: {
+    title: "Panagiotis's Portfolio",
+    description: 'Discover my digital playground',
+    url: 'https://panagiotis-kontoeidis.com',
+    siteName: "Panagiotis's Portfolio",
+    images: [
+      {
+        url: '/PK.png',
+        width: 1200,
+        height: 627,
+        alt: "Preview of Panagiotis's Portfolio",
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Panagiotis's Portfolio",
+    description: 'Discover my my digital playground',
+    images: ['/PK.png'],
+  },
+};
 
 export default function RootLayout({
   children,
