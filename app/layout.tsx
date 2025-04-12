@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Panagiotis's Portfolio",
     images: [
       {
-        url: '/PK.png',
+        url: 'https://raw.githubusercontent.com/panagiotiskon/Portfolio/master/public/PK.png',
         width: 1200,
         height: 627,
         alt: "Preview of Panagiotis's Portfolio",
