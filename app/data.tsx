@@ -37,7 +37,7 @@ export type ExperienceItem = {
 
 export const experienceContent: ExperienceItem[] = [
   {
-    title: 'Software Engineer, Frontend & Node.js @ Kotsovolos PPC Group',
+    title: 'Software Engineer, React.js & Node.js @ Kotsovolos PPC Group',
     subtitle: 'December 2024 - Present',
     description: `
       - Develop and optimize the front layer of the Kotsovolos website and KRetail B2B site using React.js.
