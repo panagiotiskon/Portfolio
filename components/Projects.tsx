@@ -5,7 +5,7 @@ import { projects } from '@/app/data';
 
 const Projects = () => {
   return (
-    <div
+    <section
       className="py-24 flex-col flex justify-center items-center min-h-screen space-y-9 max-w-[1000px] mx-auto"
       id="projects"
     >
@@ -27,7 +27,7 @@ const Projects = () => {
           />
         ))}
       </BentoGrid>
-    </div>
+    </section>
   );
 };
 

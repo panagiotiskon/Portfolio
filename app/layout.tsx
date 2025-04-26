@@ -18,6 +18,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://panagiotis-kontoeidis.com'),
   title: "Panagiotis's Portfolio",
   description: 'Discover my digital playground.',
   openGraph: {
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Panagiotis's Portfolio",
-    description: 'Discover my my digital playground',
+    description: 'Discover my digital playground',
     images: ['/PK.png'],
   },
 };

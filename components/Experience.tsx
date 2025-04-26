@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Experience = () => {
   return (
-    <div
+    <section
       className="py-24 flex-col flex justify-center items-center h-screen space-y-9 max-w-[1000px] mx-auto"
       id="experience"
     >
@@ -22,7 +22,7 @@ const Experience = () => {
       </div>
       <SectionHeader title=".Experience" align="right" className="max-w-4xl" />
       <StickyScroll content={experienceContent} />
-    </div>
+    </section>
   );
 };
 
