@@ -19,7 +19,7 @@ export const texts = {
   ABOUT_ME_NEW_3:
     'During my academic years, I developed a strong interest in web development and data management, actively participating in hackathons and seminars to refine my skills and explore emerging technologies.',
   ABOUT_ME_NEW_4:
-    'Outside the tech world, I’ve spent over 15 years as a Sabre Fencing athlete, 8 at a professional level. As a four-time Panhellenic Champion, I’ve proudly represented Greece on the global stage, competing in European and World Championships and securing top-64 world rankings.',
+    'Outside the tech world, I’ve spent over 15 years as a Sabre Fencing athlete, 8 at a professional level. As a five-time Panhellenic Champion, I’ve proudly represented Greece on the global stage, competing in European and World Championships and securing top-64 world rankings.',
   ABOUT_ME_NEW_5:
     'Most recently, I took part in the 2023 European Games and Senior World Championships.',
   ABOUT_ME_NEW_6:
@@ -37,11 +37,11 @@ export type ExperienceItem = {
 
 export const experienceContent: ExperienceItem[] = [
   {
-    title: 'Software Engineer, React.js & Node.js @ Kotsovolos PPC Group',
+    title: 'Software Engineer, ReactJS & NodeJS @ Kotsovolos PPC Group',
     subtitle: 'December 2024 - Present',
     description: `
-      - Develop and optimize the front layer of the Kotsovolos website and KRetail B2B site using React.js.
-      - Work on the Node.js microservices layer, adding new features and improving performance.
+      - Develop and optimize the front layer of the Kotsovolos website and KRetail B2B site using ReactJS and Redux.
+      - Work on the NodeJS microservices layer, adding new features and improving performance.
       - Collaborate closely within an Agile team, ensuring effective teamwork and knowledge sharing.
       - Optimize application performance and ensure seamless integration between frontend and backend systems.
       - Gain experience in developing scalable and maintainable microservices architectures.
