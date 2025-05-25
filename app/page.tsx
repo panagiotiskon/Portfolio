@@ -18,21 +18,20 @@ export default function Home() {
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 3000);
-
     return () => clearTimeout(timeout);
   }, []);
 
   return (
     <>
       {loading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black-100 ">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black-100">
           <Loading />
         </div>
       )}
 
       <main
-        className={`relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 min-h-screen transition-opacity duration-700 ${
-          loading ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        className={`bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 min-h-screen transition-opacity duration-0 ${
+          loading ? 'invisible absolute w-full h-full' : 'visible relative'
         }`}
         suppressHydrationWarning={true}
       >
