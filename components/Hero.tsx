@@ -1,7 +1,7 @@
 'use client';
 
 import { SparklesCore } from './ui/Sparkles';
-import { TextGenerateEffect } from './ui/TextGenerateEffect';
+import TextGenerateEffect from './ui/TextGenerateEffect';
 import MagicButton from './ui/MagicButton';
 import { FiDownload } from 'react-icons/fi';
 import { texts } from '@/app/data';

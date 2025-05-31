@@ -1,6 +1,6 @@
 'use client';
 
-import { StickyScroll } from './ui/StickyScroll';
+import StickyScroll from './ui/StickyScroll';
 import SectionHeader from './SectionHeader';
 import { experienceContent } from '@/app/data';
 import Image from 'next/image';
@@ -15,8 +15,8 @@ const Experience = () => {
         <Image
           src="./footer-grid.svg"
           alt="footer grid"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           className="w-full h-full lg:opacity-60 opacity:50"
         />
       </div>

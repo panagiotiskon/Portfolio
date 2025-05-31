@@ -8,7 +8,7 @@ import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
-import ContactMe from '@/components/Contact';
+import Contact from '@/components/Contact';
 import Loading from '@/components/Loading';
 
 export default function Home() {
@@ -42,7 +42,7 @@ export default function Home() {
           <AboutMe />
           <Experience />
           <Projects />
-          <ContactMe />
+          <Contact />
           <Footer />
         </div>
       </main>

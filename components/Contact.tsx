@@ -7,7 +7,7 @@ import { FaCheck } from 'react-icons/fa';
 import { texts } from '@/app/data';
 import Image from 'next/image';
 
-const ContactMe = () => {
+const Contact = () => {
   const email = texts.EMAIL;
   const [copied, setCopied] = useState(false);
 
@@ -24,8 +24,8 @@ const ContactMe = () => {
         <Image
           src="./footer-grid.svg"
           alt="footer grid"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           className="w-full h-full opacity-50"
         />
       </div>
@@ -48,4 +48,4 @@ const ContactMe = () => {
   );
 };
 
-export default ContactMe;
+export default Contact;

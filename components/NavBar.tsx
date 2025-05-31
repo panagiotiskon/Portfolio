@@ -1,5 +1,5 @@
 import React from 'react';
-import { FloatingNav } from './ui/FloatingNav';
+import FloatingNav from './ui/FloatingNav';
 
 const NavBarItems = [
   { name: 'About', link: '#about' },
@@ -8,12 +8,12 @@ const NavBarItems = [
   { name: 'Contact', link: '#contact' },
 ];
 
-function NavBar() {
+const NavBar = () => {
   return (
     <div>
       <FloatingNav navItems={NavBarItems} />
     </div>
   );
-}
+};
 
 export default NavBar;

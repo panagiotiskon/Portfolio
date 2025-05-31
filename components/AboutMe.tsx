@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react';
-import { GlareCard } from './ui/GlareCard';
+import GlareCard from './ui/GlareCard';
 import { texts } from '@/app/data';
 import SectionHeader from './SectionHeader';
-import { Spotlight } from './ui/Spotlight';
+import Spotlight from './ui/Spotlight';
 import Image from 'next/image';
 
 const AboutMe = () => {
@@ -23,8 +23,8 @@ const AboutMe = () => {
           <Image
             src="./profile.jpg"
             alt="Profile Picture"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
             className="absolute inset-0"
           />
         </GlareCard>

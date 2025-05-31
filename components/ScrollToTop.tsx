@@ -1,6 +1,6 @@
 import ScrollToTopButton  from './ui/ScrollToTopButton';
 
-function ScrollToTop () {
+const ScrollToTop = () => {
   return (
     <ScrollToTopButton />
   );

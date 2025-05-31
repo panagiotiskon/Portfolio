@@ -91,8 +91,8 @@ const Skeleton: React.FC<{ imageSrc: string; otherClassNames?: string }> = ({
       src={imageSrc}
       alt="Project Image"
       className={`absolute object-contain self-center ${otherClassNames}`}
-      layout="fill"
-      objectFit="contain"
+      fill
+      style={{ objectFit: 'contain' }}
     />
   </div>
 );

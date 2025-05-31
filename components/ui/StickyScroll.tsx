@@ -4,7 +4,7 @@ import { useMotionValueEvent, useScroll } from 'framer-motion';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-export const StickyScroll = ({
+const StickyScroll = ({
   content,
   contentClassName,
 }: {
@@ -123,3 +123,5 @@ export const StickyScroll = ({
     </motion.div>
   );
 };
+
+export default StickyScroll;
