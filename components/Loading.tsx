@@ -16,7 +16,7 @@ const Loading = () => {
         }}
         transition={{
           repeat: Infinity,
-          duration: 1.5,
+          duration: 1,
           ease: 'easeInOut',
         }}
       >
