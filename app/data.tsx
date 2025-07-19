@@ -40,7 +40,7 @@ export const experienceContent: ExperienceItem[] = [
     title: 'Software Engineer, ReactJS & NodeJS @ Kotsovolos PPC Group',
     subtitle: 'December 2024 - Present',
     description: `
-      - Develop and optimize the front layer of the Kotsovolos website and KRetail B2B site using ReactJS and Redux.
+      - Develop and optimize the front layer of the Kotsovolos website and KRetail B2B site using ReactJS and Redux Observables.
       - Work on the NodeJS microservices layer, adding new features and improving performance.
       - Collaborate closely within an Agile team, ensuring effective teamwork and knowledge sharing.
       - Optimize application performance and ensure seamless integration between frontend and backend systems.

@@ -42,10 +42,10 @@ const Hero = () => {
           <MagicButton
             icon={
               <Image
-                src="./github_logo.png"
+                src="./github-svg.svg"
                 alt="Github Logo"
-                width={40}
-                height={40}
+                width={20}
+                height={20}
               />
             }
             position="right"
@@ -61,10 +61,10 @@ const Hero = () => {
           <MagicButton
             icon={
               <Image
-                src="./linkedin_logo.png"
+                src="./linkedin-svg.svg"
                 alt="LinkedIn Logo"
-                width={40}
-                height={40}
+                width={20}
+                height={20}
               />
             }
             position="right"
@@ -78,7 +78,7 @@ const Hero = () => {
           className="items-center justify-center"
         >
           <MagicButton
-            icon={<FiDownload className="w-7 h-7" />}
+            icon={<FiDownload className="w-5 h-5" />}
             position="right"
             animation="2"
           />
