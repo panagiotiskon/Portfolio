@@ -32,57 +32,72 @@ const Hero = () => {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="flex flex-row gap-12 pt-20 items-center justify-center">
-        <a
-          href="https://github.com/panagiotiskon"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="items-center justify-center"
-        >
-          <MagicButton
-            icon={
-              <Image
-                src="./github-svg.svg"
-                alt="Github Logo"
-                width={20}
-                height={20}
-              />
-            }
-            position="right"
-            animation="3"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/panagiotis-kontoeidis/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="items-center justify-center"
-        >
-          <MagicButton
-            icon={
-              <Image
-                src="./linkedin-svg.svg"
-                alt="LinkedIn Logo"
-                width={20}
-                height={20}
-              />
-            }
-            position="right"
-            animation="1"
-          />
-        </a>
-        <a
-          href="./Panagiotis_Kontoeidis.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="items-center justify-center"
-        >
-          <MagicButton
-            icon={<FiDownload className="w-5 h-5" />}
-            position="right"
-            animation="2"
-          />
-        </a>
+      <div className="flex flex-row gap-12 pt-20 items-center justify-center mx-auto">
+        <div className="flex flex-col items-center group">
+          <a
+            href="https://github.com/panagiotiskon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items-center justify-center"
+          >
+            <MagicButton
+              icon={
+                <Image
+                  src="./github-svg.svg"
+                  alt="Github Logo"
+                  width={20}
+                  height={20}
+                />
+              }
+              position="right"
+              animation="3"
+            />
+          </a>
+          <p className="mt-2 opacity-80 text-white text-xs  group-hover:text-lightBlue transition-all duration-300 ease-in-out font-jetbrains">
+            Github
+          </p>
+        </div>
+        <div className="flex flex-col items-center group">
+          <a
+            href="https://www.linkedin.com/in/panagiotis-kontoeidis/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items-center justify-center"
+          >
+            <MagicButton
+              icon={
+                <Image
+                  src="./linkedin-svg.svg"
+                  alt="LinkedIn Logo"
+                  width={20}
+                  height={20}
+                />
+              }
+              position="right"
+              animation="1"
+            />
+          </a>
+          <p className="mt-2 opacity-80 text-white text-xs group-hover:text-lightBlue transition-all duration-300 ease-in-out font-jetbrains">
+            LinkedIn
+          </p>
+        </div>
+        <div className="flex flex-col items-center group">
+          <a
+            href="./Panagiotis_Kontoeidis.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items-center justify-center"
+          >
+            <MagicButton
+              icon={<FiDownload className="w-5 h-5" />}
+              position="right"
+              animation="2"
+            />
+          </a>
+          <p className="mt-2 opacity-80 text-white text-xs group-hover:text-lightBlue transition-all duration-300 font-jetbrains">
+            Resume
+          </p>
+        </div>
       </div>
     </section>
   );

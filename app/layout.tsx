@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Panagiotis's Portfolio",
     images: [
       {
-        url: 'https://raw.githubusercontent.com/panagiotiskon/Portfolio/master/public/PK.png',
+        url: 'https://raw.githubusercontent.com/panagiotiskon/Portfolio/master/public/PK-icon.png',
         width: 1200,
         height: 627,
         alt: "Preview of Panagiotis's Portfolio",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Panagiotis's Portfolio",
     description: 'Discover my digital playground',
-    images: ['/PK.png'],
+    images: ['/PK-icon.png'],
   },
 };
 
