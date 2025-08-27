@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono, JetBrains_Mono } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import type { Metadata } from 'next';
 
@@ -54,6 +55,19 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="./PK-icon.png" />
         <title>Panagiotis&#39;s Portfolio</title>
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-E3ECR924NN"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E3ECR924NN');
+      `}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jetBrainsMono} antialiased`}
