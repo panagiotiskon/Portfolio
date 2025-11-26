@@ -3,22 +3,28 @@
 // import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import Experience from '@/components/Experience';
-import Projects from '@/components/Projects';
-import Footer from '@/components/Footer';
+import NavBar from '@/components/NavBar';
+import Hero from '@/components/Hero';
 import ScrollToTop from '@/components/ScrollToTop';
-import Contact from '@/components/Contact';
 // import Loading from '@/components/Loading';
 
-const NavBar = dynamic(() => import('@/components/NavBar'), {
-  loading: () => <div className="h-16 bg-transparent" />,
-});
-
-const Hero = dynamic(() => import('@/components/Hero'), {
-  loading: () => <div className="h-screen bg-black-100" />,
-});
-
 const AboutMe = dynamic(() => import('@/components/AboutMe'), {
+  ssr: false,
+});
+
+const Contact = dynamic(() => import('@/components/Contact'), {
+  ssr: false,
+});
+
+const Projects = dynamic(() => import('@/components/Projects'), {
+  ssr: false,
+});
+
+const Experience = dynamic(() => import('@/components/Experience'), {
+  ssr: false,
+});
+
+const Footer = dynamic(() => import('@/components/Footer'), {
   ssr: false,
 });
 

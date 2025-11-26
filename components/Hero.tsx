@@ -9,9 +9,12 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className=" relative w-full flex flex-col overflow-hidden rounded-md h-screen">
+    <section
+      id="hero"
+      className=" relative w-full flex flex-col overflow-hidden rounded-md h-screen"
+    >
       <div className="text-3xl  font-bold text-center text-white pt-28 mt-20 ">
-        <p className="mt-5 lg:text-6xl md:text-6xl">
+        <p className="mt-5 text-4xl lg:text-6xl md:text-6xl">
           {texts.GREETING}{' '}
           <span className="font-jetbrains text-lightBlue">Panagiotis</span>
         </p>

@@ -23,6 +23,7 @@ const AboutMe = () => {
             fill
             style={{ objectFit: 'cover' }}
             className="absolute inset-0"
+            loading="lazy"
           />
         </GlareCard>
         <div className="md:text-left space-y-4 text-base text-neutral-300 text-justify">
