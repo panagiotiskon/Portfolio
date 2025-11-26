@@ -35,6 +35,7 @@ const Hero = () => {
       <div className="flex flex-row gap-12 pt-20 items-center justify-center mx-auto">
         <div className="flex flex-col items-center group">
           <a
+            aria-label="GitHub profile link"
             href="https://github.com/panagiotiskon"
             target="_blank"
             rel="noopener noreferrer"
@@ -60,6 +61,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col items-center group">
           <a
+            aria-label="LinkedIn profile link"
             href="https://www.linkedin.com/in/panagiotis-kontoeidis/"
             target="_blank"
             rel="noopener noreferrer"
@@ -85,6 +87,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col items-center group">
           <a
+            aria-label="View Resume link"
             href="./Panagiotis_Kontoeidis.pdf"
             target="_blank"
             rel="noopener noreferrer"

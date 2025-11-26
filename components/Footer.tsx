@@ -4,6 +4,7 @@ const Footer = () => {
       <p className="max-w-xl px-4">
         Designed & Built with{' '}
         <a
+          aria-label="Next.js website"
           href="https://nextjs.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -14,6 +15,7 @@ const Footer = () => {
         </a>{' '}
         and{' '}
         <a
+          aria-label="Tailwind CSS website"
           href="https://tailwindcss.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -23,6 +25,7 @@ const Footer = () => {
         </a>
         . See source code{' '}
         <a
+          aria-label="GitHub repository"
           href="https://github.com/panagiotiskon/portfolio"
           target="_blank"
           rel="noopener noreferrer"

@@ -31,6 +31,7 @@ const MagicButton = ({
   return (
     <button
       id={id}
+      aria-label={id}
       style={{ width: `${width}px` }}
       className={`relative inline-flex h-12 mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none ${otherClasses}`}
       onClick={handleClick}
