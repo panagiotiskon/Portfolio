@@ -27,6 +27,7 @@ const NotFound = () => {
           <p className="text-2xl mb-4 font-jetbrains ">Page Not Found</p>
           <Link href="/">
             <MagicButton
+              id="go-home-button"
               title="Go Home"
               position="left"
               animation="2"

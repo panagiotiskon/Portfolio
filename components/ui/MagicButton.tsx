@@ -1,6 +1,7 @@
 import React from 'react';
 
 const MagicButton = ({
+  id,
   title,
   icon,
   position,
@@ -9,6 +10,7 @@ const MagicButton = ({
   width = 54,
   otherClasses,
 }: {
+  id: string;
   title?: string;
   icon?: React.ReactNode;
   position?: string;
@@ -28,6 +30,7 @@ const MagicButton = ({
     : 'animate-spin_medium';
   return (
     <button
+      id={id}
       style={{ width: `${width}px` }}
       className={`relative inline-flex h-12 mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none ${otherClasses}`}
       onClick={handleClick}

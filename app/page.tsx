@@ -1,15 +1,26 @@
 'use client';
 
 // import { useEffect, useState } from 'react';
-import NavBar from '@/components/NavBar';
-import Hero from '@/components/Hero';
-import AboutMe from '@/components/AboutMe';
+import dynamic from 'next/dynamic';
+
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import Contact from '@/components/Contact';
 // import Loading from '@/components/Loading';
+
+const NavBar = dynamic(() => import('@/components/NavBar'), {
+  loading: () => <div className="h-16 bg-transparent" />,
+});
+
+const Hero = dynamic(() => import('@/components/Hero'), {
+  loading: () => <div className="h-screen bg-black-100" />,
+});
+
+const AboutMe = dynamic(() => import('@/components/AboutMe'), {
+  ssr: false,
+});
 
 export default function Home() {
   // const [loading, setLoading] = useState(true);

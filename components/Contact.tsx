@@ -32,6 +32,7 @@ const Contact = () => {
       <p className="text-neutral-300 text-sm">{texts.CONTACT}</p>
       <div className="mb-24">
         <MagicButton
+          id="contact-button"
           title={copied ? texts.COPIED : texts.CONTACT_BUTTON}
           icon={copied ? <FaCheck size={16} /> : <FiSend size={16} />}
           position="right"

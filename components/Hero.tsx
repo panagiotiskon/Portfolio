@@ -41,6 +41,7 @@ const Hero = () => {
             className="items-center justify-center"
           >
             <MagicButton
+              id="github-button"
               icon={
                 <Image
                   src="./github-svg.svg"
@@ -65,6 +66,7 @@ const Hero = () => {
             className="items-center justify-center"
           >
             <MagicButton
+              id="linkedin-button"
               icon={
                 <Image
                   src="./linkedin-svg.svg"
@@ -89,6 +91,7 @@ const Hero = () => {
             className="items-center justify-center"
           >
             <MagicButton
+              id="resume-button"
               icon={<FiDownload className="w-5 h-5" />}
               position="right"
               animation="2"
