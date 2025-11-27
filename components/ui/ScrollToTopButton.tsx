@@ -22,6 +22,7 @@ const ScrollToTopButton = () => {
     <AnimatePresence>
       {showScrollTop && (
         <motion.button
+          aria-label="scroll-to-top-button"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
@@ -29,7 +30,7 @@ const ScrollToTopButton = () => {
           onClick={scrollToTop}
           className="fixed bottom-6 right-7 z-50 lg:bottom-14 lg:right-14 bg-transparent  text-white p-2 rounded-lg shadow-md hover:bg-blue-950 transition"
         >
-          <HiChevronUp size={20} />
+          <HiChevronUp size={23} />
         </motion.button>
       )}
     </AnimatePresence>

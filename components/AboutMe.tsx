@@ -1,11 +1,11 @@
 'use client';
 
-import React from 'react';
+import Image from 'next/image';
 import GlareCard from './ui/GlareCard';
 import { texts } from '@/app/data';
 import SectionHeader from './SectionHeader';
 import Spotlight from './ui/Spotlight';
-import Image from 'next/image';
+import colouredText from './util/colouredText';
 
 const AboutMe = () => {
   return (
@@ -36,7 +36,7 @@ const AboutMe = () => {
             texts.ABOUT_ME_NEW_6,
             texts.ABOUT_ME_NEW_7,
           ].map((text, index) => (
-            <p key={index}>{text}</p>
+            <p key={index}>{colouredText(text)}</p>
           ))}
         </div>
       </div>
