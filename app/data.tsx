@@ -60,7 +60,7 @@ export const experienceContent: ExperienceItem[] = [
   },
   {
     title: 'Software Engineer Intern, Backend @ Logicea',
-    subtitle: 'February - August 2024',
+    subtitle: 'February 2024 - August 2024',
     description: `
           - Developed RESTful APIs using the Spring Boot Framework and MySQL relational databases.
           - Actively contributed as a member of a large Agile team, demonstrating strong collaboration and communication skills.
