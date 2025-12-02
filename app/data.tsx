@@ -33,6 +33,7 @@ export type ExperienceItem = {
   subtitle: string;
   description: string;
   content: ReactNode;
+  chipTagColor?: string;
 };
 
 export const experienceContent: ExperienceItem[] = [
@@ -40,7 +41,7 @@ export const experienceContent: ExperienceItem[] = [
     title: 'Software Engineer, ReactJS & NodeJS @ Kotsovolos PPC Group',
     subtitle: 'December 2024 - Present',
     description: `
-      - Develop and optimize the front layer of the Kotsovolos website and KRetail B2B site using ReactJS and Redux Observables.
+      - Develop and optimize the front layer of the {Kotsovolos website} and {KRetail} B2B/B2C web application for in-store sales agents, using React.js and Redux-Observables. 
       - Work on the NodeJS microservices layer, adding new features and improving performance.
       - Collaborate closely within an Agile team, ensuring effective teamwork and knowledge sharing.
       - Optimize application performance and ensure seamless integration between frontend and backend systems.
@@ -57,6 +58,7 @@ export const experienceContent: ExperienceItem[] = [
         />
       </div>
     ),
+    chipTagColor: 'rgb(76 5 25)',
   },
   {
     title: 'Software Engineer Intern, Backend @ Logicea',
@@ -64,7 +66,7 @@ export const experienceContent: ExperienceItem[] = [
     description: `
           - Developed RESTful APIs using the Spring Boot Framework and MySQL relational databases.
           - Actively contributed as a member of a large Agile team, demonstrating strong collaboration and communication skills.
-          - Integrated and tested APIs and tools to ensure seamless functionality.
+          - Integrated and tested APIs and tools, including {Stripe payments}, to ensure seamless functionality.
           - Specialized in backend development and web application deployment.
           - Gained extensive experience in Java and the Spring Framework.
         `,
@@ -79,6 +81,7 @@ export const experienceContent: ExperienceItem[] = [
         />
       </div>
     ),
+    chipTagColor: 'rgb(46 16 101)',
   },
 ];
 

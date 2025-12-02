@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import chipTagText from '../util/chipTagText';
 
 const StickyScroll = ({
   content,
@@ -13,6 +14,7 @@ const StickyScroll = ({
     subtitle?: string;
     description: string;
     content?: React.ReactNode;
+    chipTagColor?: string;
   }[];
   contentClassName?: string;
 }) => {
@@ -104,7 +106,7 @@ const StickyScroll = ({
                 }}
                 className="text-base text-neutral-300 mt-7 whitespace-pre-line text-justify "
               >
-                {item.description}
+                {chipTagText(item.description, item?.chipTagColor)}
               </motion.p>
             </div>
           ))}
