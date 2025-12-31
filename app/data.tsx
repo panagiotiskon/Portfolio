@@ -8,7 +8,7 @@ export const texts = {
   WELCOME: 'Welcome to my digital playground',
   INTRO: 'Full Stack Developer',
   EMAIL: 'panos.kontoeidis@gmail.com',
-  CONTACT: 'Want to connect ? Grab my email.',
+  CONTACT: "Let's chat",
   CONTACT_BUTTON: "Let's get in touch",
   CV_BUTTON: 'Get a copy',
   COPIED: 'Copied',
