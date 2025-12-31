@@ -8,6 +8,7 @@ import confetti from 'canvas-confetti';
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -34,6 +35,8 @@ const Contact = () => {
         (error) => {
           console.log('Error:', error.text);
           setIsLoading(false);
+          setError('Something went wrong. Please try again.');
+          setTimeout(() => setError(null), 5000);
         }
       );
   };
@@ -54,6 +57,11 @@ const Contact = () => {
           <ContactForm handleSubmit={handleSubmit} isLoading={isLoading} />
         </div>
       </div>
+      {error && (
+        <div className="fixed top-10 left-1/2 -translate-x-1/2 z-50 rounded-lg bg-red-500 px-6 py-4 md:px-4 md:py-2 text-white shadow-lg w-[90%] md:w-auto text-center">
+          {error}
+        </div>
+      )}
       <div className="w-full absolute left-0 bottom-0 min-h-[23rem] pointer-events-none">
         <Image
           src="./footer-grid.svg"
