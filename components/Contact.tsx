@@ -1,11 +1,41 @@
 'use client';
 import Image from 'next/image';
-import { SignupFormDemo } from './ui/ContactForm';
+import { ContactForm } from './ui/ContactForm';
 import SectionHeader from './SectionHeader';
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+import confetti from 'canvas-confetti';
 
 const Contact = () => {
-  const handleSubmit = () => {
-    return console.log('eee');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        e.currentTarget,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+        }
+      )
+      .then(
+        () => {
+          console.log('Success');
+          setIsLoading(false);
+          confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+          });
+        },
+        (error) => {
+          console.log('Error:', error.text);
+          setIsLoading(false);
+        }
+      );
   };
 
   return (
@@ -21,7 +51,7 @@ const Contact = () => {
         "
       >
         <div className="w-full max-w-3xl mx-auto px-6 md:px-0 py-10">
-          <SignupFormDemo handleSubmit={handleSubmit} />
+          <ContactForm handleSubmit={handleSubmit} isLoading={isLoading} />
         </div>
       </div>
       <div className="w-full absolute left-0 bottom-0 min-h-[23rem] pointer-events-none">

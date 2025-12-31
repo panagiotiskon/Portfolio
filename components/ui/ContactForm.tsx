@@ -1,14 +1,16 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { texts } from '@/app/data';
 import { Input } from './FancyInput';
 import { Label } from './FancyLabel';
 import { TextArea } from './FancyTextArea';
+import Image from 'next/image';
 
-export const SignupFormDemo: React.FC<{
+export const ContactForm: React.FC<{
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-}> = ({ handleSubmit }) => {
+  isLoading: boolean;
+}> = ({ handleSubmit, isLoading }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,8 +25,10 @@ export const SignupFormDemo: React.FC<{
     message?: string;
   }>({});
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { id, value } = e.target;
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { id, value } = e.target as HTMLInputElement | HTMLTextAreaElement;
 
     setFormData({ ...formData, [id]: value });
 
@@ -39,6 +43,7 @@ export const SignupFormDemo: React.FC<{
     e.preventDefault();
 
     const newErrors = { ...errors };
+
     Object.keys(formData).forEach((key) => {
       if (!formData[key as keyof typeof formData]) {
         newErrors[key as keyof typeof errors] = 'This field is required.';
@@ -50,7 +55,7 @@ export const SignupFormDemo: React.FC<{
       return;
     }
 
-    console.log('Form submitted successfully:', formData);
+    handleSubmit(e);
   };
 
   return (
@@ -105,12 +110,9 @@ export const SignupFormDemo: React.FC<{
             autoComplete="on"
             placeholder="Your message"
             value={formData.message}
-            rows={3}
             maxLength={maxMessageLength}
             className="peer"
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
+            onChange={handleChange}
           />
           {errors.message && (
             <p className="text-red-500 text-xs">{errors.message}</p>
@@ -122,8 +124,21 @@ export const SignupFormDemo: React.FC<{
         <button
           className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
           type="submit"
+          disabled={isLoading}
         >
-          Submit
+          {isLoading ? (
+            <div className="flex items-center justify-center">
+              <Image
+                src="/loader.svg"
+                alt="loading"
+                width={20}
+                height={20}
+                className="animate-spin"
+              />
+            </div>
+          ) : (
+            'Submit'
+          )}
           <BottomGradient />
         </button>
         <div className="my-8 h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />
