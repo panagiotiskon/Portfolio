@@ -61,21 +61,18 @@ export const ContactForm: React.FC<{
   return (
     <div className="shadow-input mx-auto w-full p-4 rounded-xl md:p-8 bg-black border border-white/[0.2]">
       <h2 className="text-xl font-bold text-neutral-200 mb-1">
-        {texts.CONTACT}{' '}
+        {texts.CONTACT}
       </h2>
-      <p className="text-sm text-neutral-300">
-        Weather you have a question or simply want to connect, my inbox is
-        always open.
-      </p>
+      <p className="text-sm text-neutral-300">{texts.CONTACT_DESC}</p>
       <form className="my-8" onSubmit={handleFormSubmit}>
         <div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
           <LabelInputContainer className="mb-2">
-            <Label htmlFor="name">Name</Label>
+            <Label htmlFor="name">{texts.NAME_LABEL}</Label>
             <Input
               id="name"
               name="name"
               autoComplete="on"
-              placeholder="Your Name"
+              placeholder="Your name"
               type="text"
               value={formData.name}
               onChange={handleChange}
@@ -86,12 +83,12 @@ export const ContactForm: React.FC<{
             )}
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email">{texts.EMAIL_LABEL}</Label>
             <Input
               id="email"
               name="email"
               autoComplete="on"
-              placeholder="your@email.com"
+              placeholder="Your@email.com"
               type="email"
               value={formData.email}
               onChange={handleChange}
@@ -103,7 +100,7 @@ export const ContactForm: React.FC<{
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="message">Your Message</Label>
+          <Label htmlFor="message">{texts.MESSAGE_LABEL}</Label>
           <TextArea
             id="message"
             name="message"
@@ -137,7 +134,7 @@ export const ContactForm: React.FC<{
               />
             </div>
           ) : (
-            'Submit'
+            texts.SEND_BUTTON
           )}
           <BottomGradient />
         </button>

@@ -9,9 +9,13 @@ export const texts = {
   INTRO: 'Full Stack Developer',
   EMAIL: 'panos.kontoeidis@gmail.com',
   CONTACT: "Let's chat",
-  CONTACT_BUTTON: "Let's get in touch",
   CV_BUTTON: 'Get a copy',
-  COPIED: 'Copied',
+  NAME_LABEL: 'Name',
+  EMAIL_LABEL: 'Email',
+  MESSAGE_LABEL: 'Your Message',
+  SEND_BUTTON: 'Send',
+  CONTACT_DESC:
+    'Weather you have a question or simply want to connect, my inbox is always open.',
   ABOUT_ME_NEW_1:
     'I’m Panagiotis, a Computer Science graduate from the University of Athens with a passion for web development and crafting impactful digital experiences.',
   ABOUT_ME_NEW_2:
@@ -41,9 +45,9 @@ export const experienceContent: ExperienceItem[] = [
     title: 'Software Engineer, ReactJS & NodeJS @ Kotsovolos PPC Group',
     subtitle: 'December 2024 - Present',
     description: `
-      - Develop and optimize the front layer of the {Kotsovolos website} and {KRetail} B2B/B2C web application for in-store sales agents, using React.js and Redux-Observables. 
-      - Work on the NodeJS microservices layer, adding new features and improving performance.
-      - Collaborate closely within an Agile team, ensuring effective teamwork and knowledge sharing.
+      - Develop and optimize the front layer of the {Kotsovolos website} and {KRetail} B2B/B2C web application for in-store sales agents, using {ReactJS} and {Redux-Observables}. 
+      - Work on the {NodeJS} microservices layer, adding new features and improving performance.
+      - Collaborate closely within an {Agile} cross-functional team, ensuring effective teamwork and knowledge sharing.
       - Optimize application performance and ensure seamless integration between frontend and backend systems.
       - Gain experience in developing scalable and maintainable microservices architectures.
     `,
@@ -64,8 +68,8 @@ export const experienceContent: ExperienceItem[] = [
     title: 'Software Engineer Intern, Backend @ Logicea',
     subtitle: 'February 2024 - August 2024',
     description: `
-          - Developed RESTful APIs using the Spring Boot Framework and MySQL relational databases.
-          - Actively contributed as a member of a large Agile team, demonstrating strong collaboration and communication skills.
+          - Developed {RESTful APIs} using the {Spring Boot} Framework and {MySQL} relational databases.
+          - Actively contributed as a member of a large {Agile} team, demonstrating strong collaboration and communication skills.
           - Integrated and tested APIs and tools, including {Stripe payments}, to ensure seamless functionality.
           - Specialized in backend development and web application deployment.
           - Gained extensive experience in Java and the Spring Framework.
