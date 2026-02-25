@@ -1,11 +1,12 @@
 'use client';
 
-// import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import NavBar from '@/components/NavBar';
 import Hero from '@/components/Hero';
 import ScrollToTop from '@/components/ScrollToTop';
+import { texts } from './data';
 // import Loading from '@/components/Loading';
 
 const AboutMe = dynamic(() => import('@/components/AboutMe'), {
@@ -29,38 +30,28 @@ const Footer = dynamic(() => import('@/components/Footer'), {
 });
 
 export default function Home() {
-  // const [loading, setLoading] = useState(true);
+  const [prefillMessage, setPrefillMessage] = useState('');
 
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1000);
-  //   return () => clearTimeout(timeout);
-  // }, []);
+  const handleResumeClick = () => {
+    setPrefillMessage(texts.RESUME_PREFILL);
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <>
-      {/* {loading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black-100">
-          <Loading />
-        </div>
-      )} */}
-
-      <main
-        className="bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 min-h-screen transition-opacity duration-0 visible relative"
-        suppressHydrationWarning={true}
-      >
-        <div className="max-w-7xl w-full">
-          <NavBar />
-          <ScrollToTop />
-          <Hero />
-          <AboutMe />
-          <Experience />
-          <Projects />
-          <Contact />
-          <Footer />
-        </div>
-      </main>
-    </>
+    <main
+      className="bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 min-h-screen transition-opacity duration-0 visible relative"
+      suppressHydrationWarning={true}
+    >
+      <div className="max-w-7xl w-full">
+        <NavBar />
+        <ScrollToTop />
+        <Hero onResumeClick={handleResumeClick} />
+        <AboutMe />
+        <Experience />
+        <Projects />
+        <Contact prefillMessage={prefillMessage} />
+        <Footer />
+      </div>
+    </main>
   );
 }

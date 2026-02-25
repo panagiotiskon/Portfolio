@@ -30,6 +30,8 @@ export const texts = {
     'Beyond competing, I am also a {certified International Fencing Referee}, officiating high-level tournaments.',
   ABOUT_ME_NEW_7:
     'Whether in tech or on the piste, {I am eager to succeed} through strategy, precision, and an unstoppable {drive to improve}.',
+  RESUME_PREFILL:
+    'Hello! I saw your portfolio and would love to request a copy of your resume. Thanks!',
 };
 
 export type ExperienceItem = {

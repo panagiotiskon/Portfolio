@@ -3,11 +3,11 @@
 import { SparklesCore } from './ui/Sparkles';
 import TextGenerateEffect from './ui/TextGenerateEffect';
 import MagicButton from './ui/MagicButton';
-import { FiDownload } from 'react-icons/fi';
+import { FiMail } from 'react-icons/fi';
 import { texts } from '@/app/data';
 import Image from 'next/image';
 
-const Hero = () => {
+const Hero = ({ onResumeClick }: { onResumeClick: () => void }) => {
   return (
     <section
       id="hero"
@@ -89,20 +89,18 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col items-center group">
-          <a
-            aria-label="View Resume link"
-            href="./Panagiotis_Kontoeidis.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            aria-label="Request resume"
+            onClick={onResumeClick}
             className="items-center justify-center"
           >
             <MagicButton
               id="resume-button"
-              icon={<FiDownload className="w-5 h-5" />}
+              icon={<FiMail className="w-5 h-5" />}
               position="right"
               animation="2"
             />
-          </a>
+          </button>
           <p className="mt-2 opacity-80 text-white text-xs group-hover:text-lightBlue transition-all duration-300 font-jetbrains">
             Resume
           </p>

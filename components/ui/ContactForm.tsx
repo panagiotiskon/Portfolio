@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { texts } from '@/app/data';
 import { Input } from './FancyInput';
@@ -10,12 +10,19 @@ import Image from 'next/image';
 export const ContactForm: React.FC<{
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
   isLoading: boolean;
-}> = ({ handleSubmit, isLoading }) => {
+  initialMessage?: string;
+}> = ({ handleSubmit, isLoading, initialMessage }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: '',
+    message: initialMessage ?? '',
   });
+
+  useEffect(() => {
+    if (initialMessage) {
+      setFormData((prev) => ({ ...prev, message: initialMessage }));
+    }
+  }, [initialMessage]);
 
   const maxMessageLength = 200;
 

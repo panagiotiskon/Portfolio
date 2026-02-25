@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import confetti from 'canvas-confetti';
 
-const Contact = () => {
+const Contact = ({ prefillMessage }: { prefillMessage?: string }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -54,7 +54,7 @@ const Contact = () => {
         "
       >
         <div className="w-full max-w-3xl mx-auto px-6 md:px-0 py-10">
-          <ContactForm handleSubmit={handleSubmit} isLoading={isLoading} />
+          <ContactForm handleSubmit={handleSubmit} isLoading={isLoading} initialMessage={prefillMessage} />
         </div>
       </div>
       {error && (
