@@ -119,7 +119,7 @@ export const projects = [
           src="./connectin-logo.png"
           alt="ConnectIn Logo"
           fill
-          style={{ objectFit: 'contain', padding: '1.25rem' }}
+          className="object-contain p-2 md:p-5"
         />
       </div>
     ),
