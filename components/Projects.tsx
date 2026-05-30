@@ -20,6 +20,7 @@ const Projects = () => {
             key={i}
             title={item.title}
             link={item.link}
+            liveLink={item.liveLink}
             description={item.description}
             header={item.header}
             className={item.className}

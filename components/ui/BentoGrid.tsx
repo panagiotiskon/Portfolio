@@ -23,6 +23,7 @@ export const BentoGridItem = ({
   className,
   title,
   link,
+  liveLink,
   description,
   header,
   skills,
@@ -30,6 +31,7 @@ export const BentoGridItem = ({
   className?: string;
   title?: string | React.ReactNode;
   link?: string;
+  liveLink?: string;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   skills?: { skillName: string; skillURL: string }[];
@@ -44,7 +46,7 @@ export const BentoGridItem = ({
       {header}
       <div className="transition duration-200 group-hover/bento:translate-x-2 ">
         {skills && (
-          <div className="mt-2 flex flex-wrap space-x-2 ">
+          <div className="mt-2 flex flex-wrap gap-1.5 items-center">
             {skills.map((skill, idx) => (
               <a
                 key={idx}
@@ -56,6 +58,16 @@ export const BentoGridItem = ({
                 {skill.skillName}
               </a>
             ))}
+            {liveLink && (
+              <a
+                href={liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-auto text-xs font-jetbrains text-lightBlue border border-lightBlue/40 bg-teal-950/60 rounded-sm px-2 py-[2px] hover:bg-teal-900 hover:border-lightBlue transition-all duration-200 flex items-center gap-1 whitespace-nowrap"
+              >
+                Check Live ↗
+              </a>
+            )}
           </div>
         )}
         <div className="mt-2 mb-2 font-bold  text-neutral-200 text-xl">

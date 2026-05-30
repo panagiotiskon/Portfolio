@@ -109,10 +109,20 @@ const Skeleton: React.FC<{ imageSrc: string; otherClassNames?: string }> = ({
 export const projects = [
   {
     title: 'ConnectIn - Professional Networking Application',
-    link: 'https://github.com/panagiotiskon/Connect-In',
+    link: 'https://github.com/panagiotiskon/ConnectIn-V2',
+    liveLink: 'https://connectinapp.xyz',
     description:
       'LinkedIn-style professional networking application that allows users to create profiles, manage connections, and interact with other professionals. The application features user role management, job listings, private messaging, and personalized recommendations for job postings and content through Matrix Factorization Algorithm.',
-    header: <Skeleton imageSrc={'./ConnectIn.png'} />,
+    header: (
+      <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden">
+        <Image
+          src="./connectin-logo.png"
+          alt="ConnectIn Logo"
+          fill
+          style={{ objectFit: 'contain', padding: '1.25rem' }}
+        />
+      </div>
+    ),
     className: 'md:col-span-2',
     skills: [
       { skillName: 'SpringBoot', skillURL: 'https://spring.io/' },
