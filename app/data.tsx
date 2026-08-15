@@ -32,6 +32,10 @@ export const texts = {
     'Whether in tech or on the piste, {I am eager to succeed} through strategy, precision, and an unstoppable {drive to improve}.',
   RESUME_PREFILL:
     'Hello! I saw your portfolio and would love to request a copy of your resume. Thanks!',
+  PROJECT_TEASER_BADGE: 'Coming soon',
+  PROJECT_TEASER_TITLE: 'Something {new} is on the bench.',
+  PROJECT_TEASER_BODY:
+    'Details coming soon.',
 };
 
 export type ExperienceItem = {
