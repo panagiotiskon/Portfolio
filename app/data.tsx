@@ -32,16 +32,7 @@ export const texts = {
     'Whether in tech or on the piste, {I am eager to succeed} through strategy, precision, and an unstoppable {drive to improve}.',
   RESUME_PREFILL:
     'Hello! I saw your portfolio and would love to request a copy of your resume. Thanks!',
-  PROJECT_TEASER_TITLE: '{FencingRef}',
-  PROJECT_TEASER_BODY:
-    'AI fencing referee assistant. Ask a question; every answer cites the rules it stands on.',
 };
-
-export const projectTeaserTags: { skillName: string; skillURL: string }[] = [
-  { skillName: 'SpringAI', skillURL: 'https://spring.io/projects/spring-ai' },
-  { skillName: 'React', skillURL: 'https://reactjs.org/' },
-  { skillName: 'Tailwind', skillURL: 'https://tailwindcss.com/' },
-];
 
 export type ExperienceItem = {
   title: string;
@@ -117,6 +108,48 @@ const Skeleton: React.FC<{ imageSrc: string; otherClassNames?: string }> = ({
 
 export const projects = [
   {
+    title: 'FencingRef - AI Fencing Referee Assistant',
+    link: 'https://fencingref.xyz/',
+    liveLink: 'https://fencingref.xyz/',
+    description:
+      'AI fencing referee assistant for the FIE Technical Rules. Ask a refereeing question about foil, épée, or sabre, and every answer cites the articles it stands on.',
+    header: (
+      <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden">
+        <Image
+          src="./fencingref.png"
+          alt="FencingRef"
+          fill
+          className="object-contain p-2 md:p-5"
+        />
+      </div>
+    ),
+    className: 'md:col-span-2',
+    skills: [
+      {
+        skillName: 'SpringAI',
+        skillURL: 'https://spring.io/projects/spring-ai',
+      },
+      { skillName: 'React', skillURL: 'https://reactjs.org/' },
+      { skillName: 'Tailwind', skillURL: 'https://tailwindcss.com/' },
+    ],
+  },
+  {
+    title: 'Extendible Hashing for DBMS',
+    link: 'https://github.com/panagiotiskon/Extendible-Hashing-for-DBMS',
+    description:
+      'A low-level implementation in C of extendible hashing for database systems.This method uses directories and buckets to hash data and to maximize flexibility and efficiency in computing time.',
+    header: (
+      <Skeleton imageSrc={'./test2.svg'} otherClassNames=" h-max scale-[2.2]" />
+    ),
+    className: 'md:col-span-1',
+    skills: [
+      {
+        skillName: 'Extendible Hashing',
+        skillURL: 'https://en.wikipedia.org/wiki/Extendible_hashing',
+      },
+    ],
+  },
+  {
     title: 'ConnectIn - Professional Networking Application',
     link: 'https://github.com/panagiotiskon/ConnectIn-V2',
     liveLink: 'https://connectinapp.xyz',
@@ -138,22 +171,6 @@ export const projects = [
       { skillName: 'React', skillURL: 'https://reactjs.org/' },
       { skillName: 'Mysql', skillURL: 'https://www.mysql.com/' },
       { skillName: 'Flyway', skillURL: 'https://flywaydb.org/' },
-    ],
-  },
-  {
-    title: 'Extendible Hashing for DBMS',
-    link: 'https://github.com/panagiotiskon/Extendible-Hashing-for-DBMS',
-    description:
-      'A low-level implementation in C of extendible hashing for database systems.This method uses directories and buckets to hash data and to maximize flexibility and efficiency in computing time.',
-    header: (
-      <Skeleton imageSrc={'./test2.svg'} otherClassNames=" h-max scale-[2.2]" />
-    ),
-    className: 'md:col-span-1',
-    skills: [
-      {
-        skillName: 'Extendible Hashing',
-        skillURL: 'https://en.wikipedia.org/wiki/Extendible_hashing',
-      },
     ],
   },
   {
