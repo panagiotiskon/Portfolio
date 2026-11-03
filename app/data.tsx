@@ -32,11 +32,16 @@ export const texts = {
     'Whether in tech or on the piste, {I am eager to succeed} through strategy, precision, and an unstoppable {drive to improve}.',
   RESUME_PREFILL:
     'Hello! I saw your portfolio and would love to request a copy of your resume. Thanks!',
-  PROJECT_TEASER_BADGE: 'Coming soon',
-  PROJECT_TEASER_TITLE: 'Something {new} is on the bench.',
+  PROJECT_TEASER_TITLE: '{FencingRef}',
   PROJECT_TEASER_BODY:
-    'Details coming soon.',
+    'AI fencing referee assistant. Ask a question; every answer cites the rules it stands on.',
 };
+
+export const projectTeaserTags: { skillName: string; skillURL: string }[] = [
+  { skillName: 'SpringAI', skillURL: 'https://spring.io/projects/spring-ai' },
+  { skillName: 'React', skillURL: 'https://reactjs.org/' },
+  { skillName: 'Tailwind', skillURL: 'https://tailwindcss.com/' },
+];
 
 export type ExperienceItem = {
   title: string;
