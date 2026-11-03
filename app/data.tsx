@@ -114,7 +114,7 @@ export const projects = [
     description:
       'AI fencing referee assistant for the FIE Technical Rules. Ask a refereeing question about foil, épée, or sabre, and every answer cites the articles it stands on.',
     header: (
-      <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden">
+      <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden bg-[#0c0d10]">
         <Image
           src="./fencingref.png"
           alt="FencingRef"
@@ -123,7 +123,7 @@ export const projects = [
         />
       </div>
     ),
-    className: 'md:col-span-2',
+    className: 'md:col-span-3 bg-[#0c0d10]',
     skills: [
       {
         skillName: 'SpringAI',
@@ -131,22 +131,6 @@ export const projects = [
       },
       { skillName: 'React', skillURL: 'https://reactjs.org/' },
       { skillName: 'Tailwind', skillURL: 'https://tailwindcss.com/' },
-    ],
-  },
-  {
-    title: 'Extendible Hashing for DBMS',
-    link: 'https://github.com/panagiotiskon/Extendible-Hashing-for-DBMS',
-    description:
-      'A low-level implementation in C of extendible hashing for database systems.This method uses directories and buckets to hash data and to maximize flexibility and efficiency in computing time.',
-    header: (
-      <Skeleton imageSrc={'./test2.svg'} otherClassNames=" h-max scale-[2.2]" />
-    ),
-    className: 'md:col-span-1',
-    skills: [
-      {
-        skillName: 'Extendible Hashing',
-        skillURL: 'https://en.wikipedia.org/wiki/Extendible_hashing',
-      },
     ],
   },
   {
@@ -165,12 +149,28 @@ export const projects = [
         />
       </div>
     ),
-    className: 'md:col-span-2',
+    className: 'md:col-span-3',
     skills: [
       { skillName: 'SpringBoot', skillURL: 'https://spring.io/' },
       { skillName: 'React', skillURL: 'https://reactjs.org/' },
       { skillName: 'Mysql', skillURL: 'https://www.mysql.com/' },
       { skillName: 'Flyway', skillURL: 'https://flywaydb.org/' },
+    ],
+  },
+  {
+    title: 'Extendible Hashing for DBMS',
+    link: 'https://github.com/panagiotiskon/Extendible-Hashing-for-DBMS',
+    description:
+      'A low-level implementation in C of extendible hashing for database systems.This method uses directories and buckets to hash data and to maximize flexibility and efficiency in computing time.',
+    header: (
+      <Skeleton imageSrc={'./test2.svg'} otherClassNames=" h-max scale-[2.2]" />
+    ),
+    className: 'md:col-span-2',
+    skills: [
+      {
+        skillName: 'Extendible Hashing',
+        skillURL: 'https://en.wikipedia.org/wiki/Extendible_hashing',
+      },
     ],
   },
   {
@@ -184,7 +184,7 @@ export const projects = [
         otherClassNames=" h-max scale-[1.3] "
       />
     ),
-    className: 'md:col-span-1',
+    className: 'md:col-span-2',
     skills: [
       { skillName: 'CGAL', skillURL: 'https://www.cgal.org/' },
       { skillName: 'C++', skillURL: 'https://www.cplusplus.com/' },

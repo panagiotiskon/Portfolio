@@ -13,7 +13,7 @@ const Projects = () => {
         align="left"
         className="max-w-4xl"
       />
-      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[23rem]">
+      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[23rem] md:grid-cols-6">
         {projects.map((item, i) => (
           <BentoGridItem
             key={i}
