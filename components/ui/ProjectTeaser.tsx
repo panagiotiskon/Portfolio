@@ -2,28 +2,25 @@
 
 import Image from 'next/image';
 import { motion, useReducedMotion } from 'framer-motion';
-import { texts } from '@/app/data';
+import { projectTeaserTags, texts } from '@/app/data';
 import colouredText from '../util/colouredText';
 
 /**
- * Placeholder card teasing an unannounced project. Keeps the shell of a
- * BentoGridItem so it sits in the grid as a project card, but the preview is
- * blurred out and the title is set larger, in the site's mono face, so it
- * reads as an announcement rather than another entry. Inert by design: no
- * link, no hover response, nothing focusable.
+ * Lead announcement for FencingRef. Keeps the shell of a BentoGridItem so it
+ * sits full-width at the top of the projects grid, with a slightly soft
+ * preview, teal wash, and shimmer so it still reads as the lead card.
  */
 const ProjectTeaser = () => {
   const reduceMotion = useReducedMotion();
 
   return (
-    <div className="md:col-span-3 row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-white/[0.2] bg-black p-4 cursor-default select-none">
+    <div className="md:col-span-3 row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-white/[0.2] bg-black p-4">
       <div className="relative flex items-center justify-center w-full h-full min-h-[8rem] rounded-xl overflow-hidden">
         <Image
-          src="./PK-icon.png"
-          alt=""
-          aria-hidden="true"
+          src="./fencingref.png"
+          alt="FencingRef"
           fill
-          className="object-contain p-10 opacity-[0.3] blur-lg scale-105"
+          className="object-contain p-6 opacity-80 blur-[2px] scale-105"
         />
 
         {/* Teal wash, pulling the blurred mark towards the site palette */}
@@ -66,15 +63,25 @@ const ProjectTeaser = () => {
 
       <div>
         <div className="mt-2 flex flex-wrap gap-1.5 items-center">
-          <span className="flex items-center gap-1.5 font-jetbrains uppercase tracking-[0.2em] text-lightBlue text-[10px] bg-teal-950 rounded-sm px-2 py-1">
-            <span className="relative flex h-1.5 w-1.5">
-              {!reduceMotion && (
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lightBlue opacity-75" />
-              )}
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-lightBlue" />
-            </span>
-            {texts.PROJECT_TEASER_BADGE}
-          </span>
+          {projectTeaserTags.map((tag) => (
+            <a
+              key={tag.skillName}
+              href={tag.skillURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lightBlue text-xs bg-teal-950 rounded-sm p-[2px]"
+            >
+              {tag.skillName}
+            </a>
+          ))}
+          <a
+            href="https://fencingref.xyz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-auto text-xs font-jetbrains text-lightBlue border border-lightBlue/40 bg-teal-950/60 rounded-sm px-2 py-[2px] hover:bg-teal-900 hover:border-lightBlue transition-all duration-200 flex items-center gap-1 whitespace-nowrap"
+          >
+            Check Live ↗
+          </a>
         </div>
 
         <div className="mt-3 mb-2 font-bold tracking-tight text-neutral-100 text-2xl md:text-3xl">
