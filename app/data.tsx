@@ -114,16 +114,19 @@ export const projects = [
     description:
       'AI fencing referee assistant for the FIE Technical Rules. Ask a refereeing question about foil, épée, or sabre, and every answer cites the articles it stands on.',
     header: (
-      <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden bg-[#0c0d10]">
+      <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden">
         <Image
           src="./fencingref.png"
           alt="FencingRef"
           fill
           className="object-contain p-2 md:p-5"
         />
+        <span className="absolute top-2 right-2 rounded-sm bg-lightBlue px-1.5 py-[2px] text-[10px] font-jetbrains uppercase tracking-wide text-black">
+          New
+        </span>
       </div>
     ),
-    className: 'md:col-span-3 bg-[#0c0d10]',
+    className: 'md:col-span-3 border-2 border-lightBlue',
     skills: [
       {
         skillName: 'SpringAI',
