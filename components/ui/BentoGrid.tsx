@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        'mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[23rem] md:grid-cols-3',
+        'mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-auto md:grid-cols-3',
         className
       )}
     >
@@ -39,14 +39,14 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 p-4 transition duration-200 hover:shadow-xl border-white/[0.2] bg-black shadow-none',
+        'group/bento shadow-input row-span-1 flex flex-col rounded-xl border border-neutral-200 p-4 transition duration-200 hover:shadow-xl border-white/[0.2] bg-black shadow-none',
         className
       )}
     >
-      {header}
-      <div className="transition duration-200 group-hover/bento:translate-x-2 ">
+      <div className="h-40 w-full shrink-0">{header}</div>
+      <div className="mt-4 transition duration-200 group-hover/bento:translate-x-2">
         {skills && (
-          <div className="mt-2 flex flex-wrap gap-1.5 items-center">
+          <div className="flex h-6 flex-wrap gap-1.5 items-center overflow-hidden">
             {skills.map((skill, idx) => (
               <a
                 key={idx}

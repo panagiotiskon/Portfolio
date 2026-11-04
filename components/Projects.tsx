@@ -1,6 +1,5 @@
 import SectionHeader from './SectionHeader';
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
-import ProjectTeaser from './ui/ProjectTeaser';
 import { projects } from '@/app/data';
 
 const Projects = () => {
@@ -14,8 +13,7 @@ const Projects = () => {
         align="left"
         className="max-w-4xl"
       />
-      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[23rem]">
-        <ProjectTeaser />
+      <BentoGrid className="max-w-4xl mx-auto md:grid-cols-6">
         {projects.map((item, i) => (
           <BentoGridItem
             key={i}

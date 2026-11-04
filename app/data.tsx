@@ -32,16 +32,7 @@ export const texts = {
     'Whether in tech or on the piste, {I am eager to succeed} through strategy, precision, and an unstoppable {drive to improve}.',
   RESUME_PREFILL:
     'Hello! I saw your portfolio and would love to request a copy of your resume. Thanks!',
-  PROJECT_TEASER_TITLE: '{FencingRef}',
-  PROJECT_TEASER_BODY:
-    'AI fencing referee assistant. Ask a question; every answer cites the rules it stands on.',
 };
-
-export const projectTeaserTags: { skillName: string; skillURL: string }[] = [
-  { skillName: 'SpringAI', skillURL: 'https://spring.io/projects/spring-ai' },
-  { skillName: 'React', skillURL: 'https://reactjs.org/' },
-  { skillName: 'Tailwind', skillURL: 'https://tailwindcss.com/' },
-];
 
 export type ExperienceItem = {
   title: string;
@@ -117,6 +108,35 @@ const Skeleton: React.FC<{ imageSrc: string; otherClassNames?: string }> = ({
 
 export const projects = [
   {
+    title: 'FencingRef - AI Fencing Referee Assistant',
+    link: 'https://fencingref.xyz/',
+    liveLink: 'https://fencingref.xyz/',
+    description:
+      'AI fencing referee assistant for the FIE Technical Rules. Ask a refereeing question about foil, épée, or sabre, and every answer cites the articles it stands on.',
+    header: (
+      <div className="relative flex w-full h-full min-h-[6rem] rounded-xl overflow-hidden">
+        <Image
+          src="./fencingref.png"
+          alt="FencingRef"
+          fill
+          className="object-contain p-2 md:p-5"
+        />
+        <span className="absolute top-2 right-2 rounded-sm bg-lightBlue px-1.5 py-[2px] text-[10px] font-jetbrains uppercase tracking-wide text-black">
+          New
+        </span>
+      </div>
+    ),
+    className: 'md:col-span-3 border-2 border-lightBlue',
+    skills: [
+      {
+        skillName: 'SpringAI',
+        skillURL: 'https://spring.io/projects/spring-ai',
+      },
+      { skillName: 'React', skillURL: 'https://reactjs.org/' },
+      { skillName: 'Tailwind', skillURL: 'https://tailwindcss.com/' },
+    ],
+  },
+  {
     title: 'ConnectIn - Professional Networking Application',
     link: 'https://github.com/panagiotiskon/ConnectIn-V2',
     liveLink: 'https://connectinapp.xyz',
@@ -132,7 +152,7 @@ export const projects = [
         />
       </div>
     ),
-    className: 'md:col-span-2',
+    className: 'md:col-span-3',
     skills: [
       { skillName: 'SpringBoot', skillURL: 'https://spring.io/' },
       { skillName: 'React', skillURL: 'https://reactjs.org/' },
@@ -148,7 +168,7 @@ export const projects = [
     header: (
       <Skeleton imageSrc={'./test2.svg'} otherClassNames=" h-max scale-[2.2]" />
     ),
-    className: 'md:col-span-1',
+    className: 'md:col-span-2',
     skills: [
       {
         skillName: 'Extendible Hashing',
@@ -167,7 +187,7 @@ export const projects = [
         otherClassNames=" h-max scale-[1.3] "
       />
     ),
-    className: 'md:col-span-1',
+    className: 'md:col-span-2',
     skills: [
       { skillName: 'CGAL', skillURL: 'https://www.cgal.org/' },
       { skillName: 'C++', skillURL: 'https://www.cplusplus.com/' },
